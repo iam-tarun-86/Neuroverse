@@ -1,6 +1,12 @@
 # Dependencies
 node_modules/
 **/node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+chroma_db/
+.chroma/
 
 # Production builds
 dist/
