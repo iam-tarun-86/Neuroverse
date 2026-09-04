@@ -1,0 +1,94 @@
+{
+  "status": "ALL_VERIFIED",
+  "health": {
+    "status": "online",
+    "service": "StandardIQ Recommendation Engine",
+    "air_gapped": true,
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "indexed_standards": 49,
+    "allied_graph_nodes": 52,
+    "allied_graph_edges": 105
+  },
+  "summary": [
+    {
+      "query_id": "demo-preset-01",
+      "description": "Heavy-duty Industrial Armoured PVC Power Cable (1.1kV)",
+      "rank1_standard": "IS 1554 (Part 1): 1988",
+      "similarity_score": 0.7896,
+      "allied_count": 6,
+      "allied_groups": [
+        "material_standard",
+        "test_method"
+      ],
+      "allied_standards": [
+        "IS 8130: 2013",
+        "IS 5831: 1984",
+        "IS 3975: 1999",
+        "IS 10810 (Part 5): 1984",
+        "IS 10810 (Part 7): 1984",
+        "IS 10810 (Part 45): 1984"
+      ],
+      "rank2_allied_none": true,
+      "rank3_allied_none": true
+    },
+    {
+      "query_id": "query-03",
+      "description": "Medium Voltage 11kV XLPE Power Cable",
+      "rank1_standard": "IS 7098 (Part 2): 2011",
+      "similarity_score": 0.7462,
+      "allied_count": 5,
+      "allied_groups": [
+        "material_standard",
+        "test_method",
+        "safety_standard"
+      ],
+      "allied_standards": [
+        "IS 8130: 2013",
+        "IS 5831: 1984",
+        "IS 3975: 1999",
+        "IS 10810 (Part 45): 1984",
+        "IS 16269: 2014"
+      ],
+      "rank2_allied_none": true,
+      "rank3_allied_none": true
+    },
+    {
+      "query_id": "query-04",
+      "description": "Low Voltage XLPE Power Cable 1100V (90 deg C)",
+      "rank1_standard": "IS 7098 (Part 1): 1988",
+      "similarity_score": 0.783,
+      "allied_count": 5,
+      "allied_groups": [
+        "material_standard",
+        "test_method"
+      ],
+      "allied_standards": [
+        "IS 8130: 2013",
+        "IS 5831: 1984",
+        "IS 3975: 1999",
+        "IS 10810 (Part 7): 1984",
+        "IS 10810 (Part 45): 1984"
+      ],
+      "rank2_allied_none": true,
+      "rank3_allied_none": true
+    },
+    {
+      "query_id": "query-10",
+      "description": "Arc Welding Extra-Flexible Cable (Rule Demoted Inactive Standard)",
+      "rank1_standard": "IS 9857: 1990",
+      "similarity_score": 0.7802,
+      "allied_count": 3,
+      "allied_groups": [
+        "material_standard",
+        "test_method"
+      ],
+      "allied_standards": [
+        "IS 8130: 2013",
+        "IS 6380: 1984",
+        "IS 10810 (Part 5): 1984"
+      ],
+      "rank2_allied_none": true,
+      "rank3_allied_none": true
+    }
+  ]
+}

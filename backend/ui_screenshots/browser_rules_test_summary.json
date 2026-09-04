@@ -1,0 +1,154 @@
+[
+  {
+    "query": "Supply of 70 sq.mm extra-flexible annealed copper conductor single core rubber elastomer insulated welding cables for manual metal arc welding machine connection, oil and heat resistant.",
+    "latency_text": "AIR-GAPPED 100% On-Premise Deployment \u2014 Zero Data Egress Guaranteed Local Inference: BGE-M3 + QLoRA LLM | Corpus: BIS Curated 2026 StandardIQ BIS PROCUREMENT AI  AI-Powered Standards Intelligence \u2014 100% Local  Indexed Standards: 500+ System Ready Procurement Specification Input  Describe the procurement item, technical requirements, or paste tender clauses to match relevant Indian Standards.  Clear Input 186 characters Demo Presets: PVC Cables (Electrical) Arc Welding Cable (query-10) PPC Cement (Civil) Biometric Devices (IT) TARGET SECTOR: Electrical Civil/Construction IT/Electronics Recommend Standards Extracted Requirements  Structured technical parameters parsed by Local Fine-Tuned LLM (Mock / Placeholder)  4 Parameters Identified 1 Incomplete Warning Voltage: 1.1 kV Material: PVC / Copper Conductor Environment: Outdoor Industrial Application: Power Distribution Missing: Operating Temperature Requirement Guardrail: Operating thermal rating (e.g. 70\u00b0C / 85\u00b0C) omitted in tender text. Required for derating verification. Applicable Indian Standards (Ranked Recommendations)  Ranked by dense semantic match & rule-verified status for sector: Electrical  3 Standards Ranked | \u26a1 70ms | ChromaDB + BGE #1 IS 9857: 1990 ISI Mark (Scheme I) Active 78% Match (78.0%) Welding Cables EVIDENCE  Specifies requirements for highly flexible single-core copper and aluminium cables insulated with tough elastomeric or PVC compounds designed for connecting arc welding equipment to electrode holders under heavy thermal and mechanical duty.  #2 IS 6380: 1984 Active 78% Match (77.9%) Elastomeric Insulation and Sheath of Electric Cables EVIDENCE  Specifies physical and electrical requirements for rubber and synthetic elastomeric compounds (including natural rubber, silicone, ethylene propylene rubber, and chloroprene) used for cable insulation and protective outer sheaths.  #3 IS 434 (Part 1): 1964 Withdrawn 79% Match (78.8%) Rubber Insulated Cables \u2014 Part 1: With Copper Conductors Compliance Alert: Withdrawn standard (superseded by IS 9857: 1990 for arc welding cables and IS 9968 for elastomer cables) \u2014 do not cite in new tenders. EVIDENCE  Legacy historical Indian Standard covering natural rubber vulcanized insulated cables with copper conductors; formally withdrawn and superseded by the IS 9968 elastomer cable series.  Local Fine-Tuned LLM Domain-adapted extraction & ambiguity detection BGE-M3 Dense Retrieval Semantic vector search over verified BIS corpus Rule-Based Guardrail Version verification & QCO compliance check 100% Local Processing \u2022 Zero Data Egress \u2022 Explainable AI  StandardIQ \u2014 Smart India Hackathon 2026 \u2022 Team Neuroverse  Bureau of Indian Standards (BIS) Procurement Compliance \u2022 Government-Deployable",
+    "human_review_banner": null,
+    "cards_count": 3,
+    "cards": [
+      {
+        "raw_text": "#1\nIS 9857: 1990\nISI Mark (Scheme I)\nActive\n78% Match\n(78.0%)\nWelding Cables\nEVIDENCE\n\nSpecifies requirements for highly flexible single-core copper and aluminium cables insulated with tough elastomeric or PVC compounds designed for connecting arc welding equipment to electrode holders under heavy thermal and mechanical duty.",
+        "lines": [
+          "#1",
+          "IS 9857: 1990",
+          "ISI Mark (Scheme I)",
+          "Active",
+          "78% Match",
+          "(78.0%)",
+          "Welding Cables",
+          "EVIDENCE",
+          "Specifies requirements for highly flexible single-core copper and aluminium cables insulated with tough elastomeric or PVC compounds designed for connecting arc welding equipment to electrode holders under heavy thermal and mechanical duty."
+        ]
+      },
+      {
+        "raw_text": "#2\nIS 6380: 1984\nActive\n78% Match\n(77.9%)\nElastomeric Insulation and Sheath of Electric Cables\nEVIDENCE\n\nSpecifies physical and electrical requirements for rubber and synthetic elastomeric compounds (including natural rubber, silicone, ethylene propylene rubber, and chloroprene) used for cable insulation and protective outer sheaths.",
+        "lines": [
+          "#2",
+          "IS 6380: 1984",
+          "Active",
+          "78% Match",
+          "(77.9%)",
+          "Elastomeric Insulation and Sheath of Electric Cables",
+          "EVIDENCE",
+          "Specifies physical and electrical requirements for rubber and synthetic elastomeric compounds (including natural rubber, silicone, ethylene propylene rubber, and chloroprene) used for cable insulation and protective outer sheaths."
+        ]
+      },
+      {
+        "raw_text": "#3\nIS 434 (Part 1): 1964\nWithdrawn\n79% Match\n(78.8%)\nRubber Insulated Cables \u2014 Part 1: With Copper Conductors\nCompliance Alert: Withdrawn standard (superseded by IS 9857: 1990 for arc welding cables and IS 9968 for elastomer cables) \u2014 do not cite in new tenders.\nEVIDENCE\n\nLegacy historical Indian Standard covering natural rubber vulcanized insulated cables with copper conductors; formally withdrawn and superseded by the IS 9968 elastomer cable series.",
+        "lines": [
+          "#3",
+          "IS 434 (Part 1): 1964",
+          "Withdrawn",
+          "79% Match",
+          "(78.8%)",
+          "Rubber Insulated Cables \u2014 Part 1: With Copper Conductors",
+          "Compliance Alert: Withdrawn standard (superseded by IS 9857: 1990 for arc welding cables and IS 9968 for elastomer cables) \u2014 do not cite in new tenders.",
+          "EVIDENCE",
+          "Legacy historical Indian Standard covering natural rubber vulcanized insulated cables with copper conductors; formally withdrawn and superseded by the IS 9968 elastomer cable series."
+        ]
+      }
+    ],
+    "screenshot": "C:\\Users\\tarun\\Downloads\\COLLEGE\\projects\\standardiq\\backend\\ui_screenshots\\query_10_corrected_ranking.png"
+  },
+  {
+    "query": "Tender for supply of 1.1 kV grade multi-core PVC insulated copper conductor power cables with steel wire armouring for coastal refinery substation, without specifying thermal operating rating.",
+    "latency_text": "AIR-GAPPED 100% On-Premise Deployment \u2014 Zero Data Egress Guaranteed Local Inference: BGE-M3 + QLoRA LLM | Corpus: BIS Curated 2026 StandardIQ BIS PROCUREMENT AI  AI-Powered Standards Intelligence \u2014 100% Local  Indexed Standards: 500+ System Ready Procurement Specification Input  Describe the procurement item, technical requirements, or paste tender clauses to match relevant Indian Standards.  Clear Input 192 characters Demo Presets: PVC Cables (Electrical) Arc Welding Cable (query-10) PPC Cement (Civil) Biometric Devices (IT) TARGET SECTOR: Electrical Civil/Construction IT/Electronics Recommend Standards Extracted Requirements  Structured technical parameters parsed by Local Fine-Tuned LLM (Mock / Placeholder)  4 Parameters Identified 1 Incomplete Warning Voltage: 1.1 kV Material: PVC / Copper Conductor Environment: Outdoor Industrial Application: Power Distribution Missing: Operating Temperature Requirement Guardrail: Operating thermal rating (e.g. 70\u00b0C / 85\u00b0C) omitted in tender text. Required for derating verification. Applicable Indian Standards (Ranked Recommendations)  Ranked by dense semantic match & rule-verified status for sector: Electrical  3 Standards Ranked | \u26a1 94ms | ChromaDB + BGE Recommend Human Verification Confidence Guardrail (<72%)  Top match similarity score (70.9%) is below the 72% confidence threshold. The procurement specification may be incomplete, ambiguous, or contain conflicting constraints; manual engineering review is recommended before publishing in tender documents.  #1 IS 694: 2010 ISI Mark (Scheme I) Active 71% Match (70.9%) Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V EVIDENCE  Specifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V).  #2 IS 1554 (Part 1): 1988 ISI Mark (Scheme I) Active 70% Match (69.5%) PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V EVIDENCE  Covers design, manufacturing tolerances, insulation thickness, armouring, and routine testing for armoured and unarmoured heavy-duty PVC insulated power and control cables used in industrial electricity distribution up to 1.1 kV.  #3 IS 1554 (Part 1): 1976 Superseded 68% Match (67.7%) PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V Compliance Alert: Superseded by IS 1554 (Part 1): 1988 \u2014 do not cite in new tenders. EVIDENCE  Former revision of the Indian Standard for heavy-duty PVC insulated power cables up to 1.1 kV; formally superseded by IS 1554 (Part 1): 1988. Kept in database for detecting outdated tender references.  Local Fine-Tuned LLM Domain-adapted extraction & ambiguity detection BGE-M3 Dense Retrieval Semantic vector search over verified BIS corpus Rule-Based Guardrail Version verification & QCO compliance check 100% Local Processing \u2022 Zero Data Egress \u2022 Explainable AI  StandardIQ \u2014 Smart India Hackathon 2026 \u2022 Team Neuroverse  Bureau of Indian Standards (BIS) Procurement Compliance \u2022 Government-Deployable",
+    "human_review_banner": "AIR-GAPPED\n100% On-Premise Deployment \u2014 Zero Data Egress Guaranteed\nLocal Inference:\nBGE-M3 + QLoRA LLM\n|\nCorpus: BIS Curated 2026\nStandardIQ\nBIS PROCUREMENT AI\n\nAI-Powered Standards Intelligence \u2014 100% Local\n\nIndexed Standards:\n500+\nSystem Ready\nProcurement Specification Input\n\nDescribe the procurement item, technical requirements, or paste tender clauses to match relevant Indian Standards.\n\nClear Input\n192 characters\nDemo Presets:\nPVC Cables (Electrical)\nArc Welding Cable (query-10)\nPPC Cement (Civil)\nBiometric Devices (IT)\nTARGET SECTOR:\nElectrical\nCivil/Construction\nIT/Electronics\nRecommend Standards\nExtracted Requirements\n\nStructured technical parameters parsed by Local Fine-Tuned LLM (Mock / Placeholder)\n\n4 Parameters Identified\n1 Incomplete Warning\nVoltage:\n1.1 kV\nMaterial:\nPVC / Copper Conductor\nEnvironment:\nOutdoor Industrial\nApplication:\nPower Distribution\nMissing: Operating Temperature\nRequirement Guardrail: Operating thermal rating (e.g. 70\u00b0C / 85\u00b0C) omitted in tender text. Required for derating verification.\nApplicable Indian Standards (Ranked Recommendations)\n\nRanked by dense semantic match & rule-verified status for sector: Electrical\n\n3 Standards Ranked\n|\n\u26a1\n94ms\n|\nChromaDB + BGE\nRecommend Human Verification\nConfidence Guardrail (<72%)\n\nTop match similarity score (70.9%) is below the 72% confidence threshold. The procurement specification may be incomplete, ambiguous, or contain conflicting constraints; manual engineering review is recommended before publishing in tender documents.\n\n#1\nIS 694: 2010\nISI Mark (Scheme I)\nActive\n71% Match\n(70.9%)\nPolyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V\nEVIDENCE\n\nSpecifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V).\n\n#2\nIS 1554 (Part 1): 1988\nISI Mark (Scheme I)\nActive\n70% Match\n(69.5%)\nPVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V\nEVIDENCE\n\nCovers design, manufacturing tolerances, insulation thickness, armouring, and routine testing for armoured and unarmoured heavy-duty PVC insulated power and control cables used in industrial electricity distribution up to 1.1 kV.\n\n#3\nIS 1554 (Part 1): 1976\nSuperseded\n68% Match\n(67.7%)\nPVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V\nCompliance Alert: Superseded by IS 1554 (Part 1): 1988 \u2014 do not cite in new tenders.\nEVIDENCE\n\nFormer revision of the Indian Standard for heavy-duty PVC insulated power cables up to 1.1 kV; formally superseded by IS 1554 (Part 1): 1988. Kept in database for detecting outdated tender references.\n\nLocal Fine-Tuned LLM\nDomain-adapted extraction & ambiguity detection\nBGE-M3 Dense Retrieval\nSemantic vector search over verified BIS corpus\nRule-Based Guardrail\nVersion verification & QCO compliance check\n100% Local Processing \u2022 Zero Data Egress \u2022 Explainable AI\n\nStandardIQ\n\u2014 Smart India Hackathon 2026 \u2022 Team Neuroverse\n\nBureau of Indian Standards (BIS) Procurement Compliance\n\u2022\nGovernment-Deployable",
+    "cards_count": 3,
+    "cards": [
+      {
+        "raw_text": "#1\nIS 694: 2010\nISI Mark (Scheme I)\nActive\n71% Match\n(70.9%)\nPolyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V\nEVIDENCE\n\nSpecifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V).",
+        "lines": [
+          "#1",
+          "IS 694: 2010",
+          "ISI Mark (Scheme I)",
+          "Active",
+          "71% Match",
+          "(70.9%)",
+          "Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V",
+          "EVIDENCE",
+          "Specifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V)."
+        ]
+      },
+      {
+        "raw_text": "#2\nIS 1554 (Part 1): 1988\nISI Mark (Scheme I)\nActive\n70% Match\n(69.5%)\nPVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V\nEVIDENCE\n\nCovers design, manufacturing tolerances, insulation thickness, armouring, and routine testing for armoured and unarmoured heavy-duty PVC insulated power and control cables used in industrial electricity distribution up to 1.1 kV.",
+        "lines": [
+          "#2",
+          "IS 1554 (Part 1): 1988",
+          "ISI Mark (Scheme I)",
+          "Active",
+          "70% Match",
+          "(69.5%)",
+          "PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V",
+          "EVIDENCE",
+          "Covers design, manufacturing tolerances, insulation thickness, armouring, and routine testing for armoured and unarmoured heavy-duty PVC insulated power and control cables used in industrial electricity distribution up to 1.1 kV."
+        ]
+      },
+      {
+        "raw_text": "#3\nIS 1554 (Part 1): 1976\nSuperseded\n68% Match\n(67.7%)\nPVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V\nCompliance Alert: Superseded by IS 1554 (Part 1): 1988 \u2014 do not cite in new tenders.\nEVIDENCE\n\nFormer revision of the Indian Standard for heavy-duty PVC insulated power cables up to 1.1 kV; formally superseded by IS 1554 (Part 1): 1988. Kept in database for detecting outdated tender references.",
+        "lines": [
+          "#3",
+          "IS 1554 (Part 1): 1976",
+          "Superseded",
+          "68% Match",
+          "(67.7%)",
+          "PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V",
+          "Compliance Alert: Superseded by IS 1554 (Part 1): 1988 \u2014 do not cite in new tenders.",
+          "EVIDENCE",
+          "Former revision of the Indian Standard for heavy-duty PVC insulated power cables up to 1.1 kV; formally superseded by IS 1554 (Part 1): 1988. Kept in database for detecting outdated tender references."
+        ]
+      }
+    ],
+    "screenshot": "C:\\Users\\tarun\\Downloads\\COLLEGE\\projects\\standardiq\\backend\\ui_screenshots\\query_15_human_verification_banner.png"
+  },
+  {
+    "query": "PVC insulated cables for outdoor use, 1.1kV",
+    "latency_text": "AIR-GAPPED 100% On-Premise Deployment \u2014 Zero Data Egress Guaranteed Local Inference: BGE-M3 + QLoRA LLM | Corpus: BIS Curated 2026 StandardIQ BIS PROCUREMENT AI  AI-Powered Standards Intelligence \u2014 100% Local  Indexed Standards: 500+ System Ready Procurement Specification Input  Describe the procurement item, technical requirements, or paste tender clauses to match relevant Indian Standards.  Clear Input 43 characters Demo Presets: PVC Cables (Electrical) Arc Welding Cable (query-10) PPC Cement (Civil) Biometric Devices (IT) TARGET SECTOR: Electrical Civil/Construction IT/Electronics Recommend Standards Extracted Requirements  Structured technical parameters parsed by Local Fine-Tuned LLM (Mock / Placeholder)  4 Parameters Identified 1 Incomplete Warning Voltage: 1.1 kV Material: PVC / Copper Conductor Environment: Outdoor Industrial Application: Power Distribution Missing: Operating Temperature Requirement Guardrail: Operating thermal rating (e.g. 70\u00b0C / 85\u00b0C) omitted in tender text. Required for derating verification. Applicable Indian Standards (Ranked Recommendations)  Ranked by dense semantic match & rule-verified status for sector: Electrical  3 Standards Ranked | \u26a1 160ms | ChromaDB + BGE #1 IS 1554 (Part 1): 1988 ISI Mark (Scheme I) Active 80% Match (79.5%) PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V EVIDENCE  Covers design, manufacturing tolerances, insulation thickness, armouring, and routine testing for armoured and unarmoured heavy-duty PVC insulated power and control cables used in industrial electricity distribution up to 1.1 kV.  #2 IS 694: 2010 ISI Mark (Scheme I) Active 79% Match (79.2%) Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V EVIDENCE  Specifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V).  #3 IS 1554 (Part 2): 1988 ISI Mark (Scheme I) Active 78% Match (78.4%) PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 11 kV EVIDENCE  Applies to medium-voltage PVC insulated armoured cables suitable for operating voltages between 3.3 kV and 11 kV, detailing electrostatic screening requirements, dielectric tests, and insulation compounding.  Local Fine-Tuned LLM Domain-adapted extraction & ambiguity detection BGE-M3 Dense Retrieval Semantic vector search over verified BIS corpus Rule-Based Guardrail Version verification & QCO compliance check 100% Local Processing \u2022 Zero Data Egress \u2022 Explainable AI  StandardIQ \u2014 Smart India Hackathon 2026 \u2022 Team Neuroverse  Bureau of Indian Standards (BIS) Procurement Compliance \u2022 Government-Deployable",
+    "human_review_banner": null,
+    "cards_count": 3,
+    "cards": [
+      {
+        "raw_text": "#1\nIS 1554 (Part 1): 1988\nISI Mark (Scheme I)\nActive\n80% Match\n(79.5%)\nPVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V\nEVIDENCE\n\nCovers design, manufacturing tolerances, insulation thickness, armouring, and routine testing for armoured and unarmoured heavy-duty PVC insulated power and control cables used in industrial electricity distribution up to 1.1 kV.",
+        "lines": [
+          "#1",
+          "IS 1554 (Part 1): 1988",
+          "ISI Mark (Scheme I)",
+          "Active",
+          "80% Match",
+          "(79.5%)",
+          "PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V",
+          "EVIDENCE",
+          "Covers design, manufacturing tolerances, insulation thickness, armouring, and routine testing for armoured and unarmoured heavy-duty PVC insulated power and control cables used in industrial electricity distribution up to 1.1 kV."
+        ]
+      },
+      {
+        "raw_text": "#2\nIS 694: 2010\nISI Mark (Scheme I)\nActive\n79% Match\n(79.2%)\nPolyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V\nEVIDENCE\n\nSpecifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V).",
+        "lines": [
+          "#2",
+          "IS 694: 2010",
+          "ISI Mark (Scheme I)",
+          "Active",
+          "79% Match",
+          "(79.2%)",
+          "Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V",
+          "EVIDENCE",
+          "Specifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V)."
+        ]
+      },
+      {
+        "raw_text": "#3\nIS 1554 (Part 2): 1988\nISI Mark (Scheme I)\nActive\n78% Match\n(78.4%)\nPVC Insulated (Heavy Duty) Electric Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 11 kV\nEVIDENCE\n\nApplies to medium-voltage PVC insulated armoured cables suitable for operating voltages between 3.3 kV and 11 kV, detailing electrostatic screening requirements, dielectric tests, and insulation compounding.",
+        "lines": [
+          "#3",
+          "IS 1554 (Part 2): 1988",
+          "ISI Mark (Scheme I)",
+          "Active",
+          "78% Match",
+          "(78.4%)",
+          "PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 11 kV",
+          "EVIDENCE",
+          "Applies to medium-voltage PVC insulated armoured cables suitable for operating voltages between 3.3 kV and 11 kV, detailing electrostatic screening requirements, dielectric tests, and insulation compounding."
+        ]
+      }
+    ],
+    "screenshot": "C:\\Users\\tarun\\Downloads\\COLLEGE\\projects\\standardiq\\backend\\ui_screenshots\\query_1_pvc_cables.png"
+  }
+]

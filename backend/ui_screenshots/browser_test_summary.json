@@ -1,0 +1,152 @@
+[
+  {
+    "query": "PVC insulated cables for outdoor use, 1.1kV",
+    "latency_text": "AIR-GAPPED 100% On-Premise Deployment \u2014 Zero Data Egress Guaranteed Local Inference: BGE-M3 + QLoRA LLM | Corpus: BIS Curated 2026 StandardIQ BIS PROCUREMENT AI  AI-Powered Standards Intelligence \u2014 100% Local  Indexed Standards: 500+ System Ready Procurement Specification Input  Describe the procurement item, technical requirements, or paste tender clauses to match relevant Indian Standards.  Clear Input 43 characters Demo Presets: PVC Cables (Electrical) PPC Cement (Civil) Biometric Devices (IT) TARGET SECTOR: Electrical Civil/Construction IT/Electronics Recommend Standards Extracted Requirements  Structured technical parameters parsed by Local Fine-Tuned LLM (Mock / Placeholder)  4 Parameters Identified 1 Incomplete Warning Voltage: 1.1 kV Material: PVC / Copper Conductor Environment: Outdoor Industrial Application: Power Distribution Missing: Operating Temperature Requirement Guardrail: Operating thermal rating (e.g. 70\u00b0C / 85\u00b0C) omitted in tender text. Required for derating verification. Applicable Indian Standards (Ranked Recommendations)  Ranked by dense semantic match & rule-verified status for sector: Electrical  3 Standards Ranked | \u26a1 61ms | ChromaDB + BGE #1 IS 1554 (Part 1): 1988 ISI Mark (Scheme I) Active 80% Match (79.5%) PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V EVIDENCE  Covers design, manufacturing tolerances, insulation thickness, armouring, and routine testing for armoured and unarmoured heavy-duty PVC insulated power and control cables used in industrial electricity distribution up to 1.1 kV.  #2 IS 694: 2010 ISI Mark (Scheme I) Active 79% Match (79.2%) Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V EVIDENCE  Specifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V).  #3 IS 1554 (Part 2): 1988 ISI Mark (Scheme I) Active 78% Match (78.4%) PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 11 kV EVIDENCE  Applies to medium-voltage PVC insulated armoured cables suitable for operating voltages between 3.3 kV and 11 kV, detailing electrostatic screening requirements, dielectric tests, and insulation compounding.  Local Fine-Tuned LLM Domain-adapted extraction & ambiguity detection BGE-M3 Dense Retrieval Semantic vector search over verified BIS corpus Rule-Based Guardrail Version verification & QCO compliance check 100% Local Processing \u2022 Zero Data Egress \u2022 Explainable AI  StandardIQ \u2014 Smart India Hackathon 2026 \u2022 Team Neuroverse  Bureau of Indian Standards (BIS) Procurement Compliance \u2022 Government-Deployable",
+    "cards_count": 3,
+    "cards": [
+      {
+        "raw_text": "#1\nIS 1554 (Part 1): 1988\nISI Mark (Scheme I)\nActive\n80% Match\n(79.5%)\nPVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V\nEVIDENCE\n\nCovers design, manufacturing tolerances, insulation thickness, armouring, and routine testing for armoured and unarmoured heavy-duty PVC insulated power and control cables used in industrial electricity distribution up to 1.1 kV.",
+        "lines": [
+          "#1",
+          "IS 1554 (Part 1): 1988",
+          "ISI Mark (Scheme I)",
+          "Active",
+          "80% Match",
+          "(79.5%)",
+          "PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V",
+          "EVIDENCE",
+          "Covers design, manufacturing tolerances, insulation thickness, armouring, and routine testing for armoured and unarmoured heavy-duty PVC insulated power and control cables used in industrial electricity distribution up to 1.1 kV."
+        ]
+      },
+      {
+        "raw_text": "#2\nIS 694: 2010\nISI Mark (Scheme I)\nActive\n79% Match\n(79.2%)\nPolyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V\nEVIDENCE\n\nSpecifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V).",
+        "lines": [
+          "#2",
+          "IS 694: 2010",
+          "ISI Mark (Scheme I)",
+          "Active",
+          "79% Match",
+          "(79.2%)",
+          "Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V",
+          "EVIDENCE",
+          "Specifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V)."
+        ]
+      },
+      {
+        "raw_text": "#3\nIS 1554 (Part 2): 1988\nISI Mark (Scheme I)\nActive\n78% Match\n(78.4%)\nPVC Insulated (Heavy Duty) Electric Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 11 kV\nEVIDENCE\n\nApplies to medium-voltage PVC insulated armoured cables suitable for operating voltages between 3.3 kV and 11 kV, detailing electrostatic screening requirements, dielectric tests, and insulation compounding.",
+        "lines": [
+          "#3",
+          "IS 1554 (Part 2): 1988",
+          "ISI Mark (Scheme I)",
+          "Active",
+          "78% Match",
+          "(78.4%)",
+          "PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 11 kV",
+          "EVIDENCE",
+          "Applies to medium-voltage PVC insulated armoured cables suitable for operating voltages between 3.3 kV and 11 kV, detailing electrostatic screening requirements, dielectric tests, and insulation compounding."
+        ]
+      }
+    ],
+    "screenshot": "C:\\Users\\tarun\\Downloads\\COLLEGE\\projects\\standardiq\\backend\\ui_screenshots\\query_1_pvc_cables.png"
+  },
+  {
+    "query": "11 kV (E) grade, 3 core 185 sq mm stranded aluminium conductor XLPE power cables",
+    "latency_text": "AIR-GAPPED 100% On-Premise Deployment \u2014 Zero Data Egress Guaranteed Local Inference: BGE-M3 + QLoRA LLM | Corpus: BIS Curated 2026 StandardIQ BIS PROCUREMENT AI  AI-Powered Standards Intelligence \u2014 100% Local  Indexed Standards: 500+ System Ready Procurement Specification Input  Describe the procurement item, technical requirements, or paste tender clauses to match relevant Indian Standards.  Clear Input 80 characters Demo Presets: PVC Cables (Electrical) PPC Cement (Civil) Biometric Devices (IT) TARGET SECTOR: Electrical Civil/Construction IT/Electronics Recommend Standards Extracted Requirements  Structured technical parameters parsed by Local Fine-Tuned LLM (Mock / Placeholder)  4 Parameters Identified 1 Incomplete Warning Voltage: 1.1 kV Material: PVC / Copper Conductor Environment: Outdoor Industrial Application: Power Distribution Missing: Operating Temperature Requirement Guardrail: Operating thermal rating (e.g. 70\u00b0C / 85\u00b0C) omitted in tender text. Required for derating verification. Applicable Indian Standards (Ranked Recommendations)  Ranked by dense semantic match & rule-verified status for sector: Electrical  3 Standards Ranked | \u26a1 88ms | ChromaDB + BGE #1 IS 7098 (Part 2): 2011 ISI Mark (Scheme I) Active 82% Match (82.0%) Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV EVIDENCE  Covers medium and high voltage XLPE insulated power cables rated from 3.3 kV up to 33 kV, specifying triple-extrusion conductor and insulation screening, moisture barrier options, and impulse voltage withstand tests.  #2 IS 7098 (Part 3): 1993 ISI Mark (Scheme I) Active 79% Match (79.3%) Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 3: For Working Voltages from 66 kV up to and Including 220 kV EVIDENCE  Outlines specifications for extra-high-voltage (EHV) underground transmission cables insulated with dry-cured XLPE, covering working voltages from 66 kV to 220 kV with metallic radial water barriers and degassing procedures.  #3 IS 7098 (Part 1): 1988 ISI Mark (Scheme I) Active 79% Match (78.9%) Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V EVIDENCE  Specifies requirements for low-tension power cables insulated with thermosetting cross-linked polyethylene (XLPE) for rated operational voltages up to 1.1 kV, designed for higher continuous operating temperature limits (90\u00b0C) compared to PVC.  Local Fine-Tuned LLM Domain-adapted extraction & ambiguity detection BGE-M3 Dense Retrieval Semantic vector search over verified BIS corpus Rule-Based Guardrail Version verification & QCO compliance check 100% Local Processing \u2022 Zero Data Egress \u2022 Explainable AI  StandardIQ \u2014 Smart India Hackathon 2026 \u2022 Team Neuroverse  Bureau of Indian Standards (BIS) Procurement Compliance \u2022 Government-Deployable",
+    "cards_count": 3,
+    "cards": [
+      {
+        "raw_text": "#1\nIS 7098 (Part 2): 2011\nISI Mark (Scheme I)\nActive\n82% Match\n(82.0%)\nCrosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV\nEVIDENCE\n\nCovers medium and high voltage XLPE insulated power cables rated from 3.3 kV up to 33 kV, specifying triple-extrusion conductor and insulation screening, moisture barrier options, and impulse voltage withstand tests.",
+        "lines": [
+          "#1",
+          "IS 7098 (Part 2): 2011",
+          "ISI Mark (Scheme I)",
+          "Active",
+          "82% Match",
+          "(82.0%)",
+          "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV",
+          "EVIDENCE",
+          "Covers medium and high voltage XLPE insulated power cables rated from 3.3 kV up to 33 kV, specifying triple-extrusion conductor and insulation screening, moisture barrier options, and impulse voltage withstand tests."
+        ]
+      },
+      {
+        "raw_text": "#2\nIS 7098 (Part 3): 1993\nISI Mark (Scheme I)\nActive\n79% Match\n(79.3%)\nCrosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 3: For Working Voltages from 66 kV up to and Including 220 kV\nEVIDENCE\n\nOutlines specifications for extra-high-voltage (EHV) underground transmission cables insulated with dry-cured XLPE, covering working voltages from 66 kV to 220 kV with metallic radial water barriers and degassing procedures.",
+        "lines": [
+          "#2",
+          "IS 7098 (Part 3): 1993",
+          "ISI Mark (Scheme I)",
+          "Active",
+          "79% Match",
+          "(79.3%)",
+          "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 3: For Working Voltages from 66 kV up to and Including 220 kV",
+          "EVIDENCE",
+          "Outlines specifications for extra-high-voltage (EHV) underground transmission cables insulated with dry-cured XLPE, covering working voltages from 66 kV to 220 kV with metallic radial water barriers and degassing procedures."
+        ]
+      },
+      {
+        "raw_text": "#3\nIS 7098 (Part 1): 1988\nISI Mark (Scheme I)\nActive\n79% Match\n(78.9%)\nCrosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V\nEVIDENCE\n\nSpecifies requirements for low-tension power cables insulated with thermosetting cross-linked polyethylene (XLPE) for rated operational voltages up to 1.1 kV, designed for higher continuous operating temperature limits (90\u00b0C) compared to PVC.",
+        "lines": [
+          "#3",
+          "IS 7098 (Part 1): 1988",
+          "ISI Mark (Scheme I)",
+          "Active",
+          "79% Match",
+          "(78.9%)",
+          "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V",
+          "EVIDENCE",
+          "Specifies requirements for low-tension power cables insulated with thermosetting cross-linked polyethylene (XLPE) for rated operational voltages up to 1.1 kV, designed for higher continuous operating temperature limits (90\u00b0C) compared to PVC."
+        ]
+      }
+    ],
+    "screenshot": "C:\\Users\\tarun\\Downloads\\COLLEGE\\projects\\standardiq\\backend\\ui_screenshots\\query_2_xlpe_11kv.png"
+  },
+  {
+    "query": "Turnkey supply of LT Aerial Bunched Cables (ABC) 3x50 + 1x35 for rural overhead distribution",
+    "latency_text": "AIR-GAPPED 100% On-Premise Deployment \u2014 Zero Data Egress Guaranteed Local Inference: BGE-M3 + QLoRA LLM | Corpus: BIS Curated 2026 StandardIQ BIS PROCUREMENT AI  AI-Powered Standards Intelligence \u2014 100% Local  Indexed Standards: 500+ System Ready Procurement Specification Input  Describe the procurement item, technical requirements, or paste tender clauses to match relevant Indian Standards.  Clear Input 92 characters Demo Presets: PVC Cables (Electrical) PPC Cement (Civil) Biometric Devices (IT) TARGET SECTOR: Electrical Civil/Construction IT/Electronics Recommend Standards Extracted Requirements  Structured technical parameters parsed by Local Fine-Tuned LLM (Mock / Placeholder)  4 Parameters Identified 1 Incomplete Warning Voltage: 1.1 kV Material: PVC / Copper Conductor Environment: Outdoor Industrial Application: Power Distribution Missing: Operating Temperature Requirement Guardrail: Operating thermal rating (e.g. 70\u00b0C / 85\u00b0C) omitted in tender text. Required for derating verification. Applicable Indian Standards (Ranked Recommendations)  Ranked by dense semantic match & rule-verified status for sector: Electrical  3 Standards Ranked | \u26a1 128ms | ChromaDB + BGE #1 IS 14255: 1995 ISI Mark (Scheme I) Active 82% Match (81.9%) Aerial Bunched Cables for Working Voltages up to and Including 1100 V EVIDENCE  Covers overhead distribution cables comprising insulated phase conductors bundled around a bare or insulated aluminium alloy neutral/messenger wire, designed for rural electrification and theft-resistant low-voltage power distribution.  #2 IS 7098 (Part 2): 2011 ISI Mark (Scheme I) Active 68% Match (68.0%) Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV EVIDENCE  Covers medium and high voltage XLPE insulated power cables rated from 3.3 kV up to 33 kV, specifying triple-extrusion conductor and insulation screening, moisture barrier options, and impulse voltage withstand tests.  #3 IS 13573 (Part 1): 2021 ISI Mark (Scheme I) Active 68% Match (67.9%) Cable Accessories for Extruded Power Cables for Rated Voltages from 3.3 kV up to and Including 33 kV \u2014 Part 1: Test Requirements EVIDENCE  Specifies electrical test sequences and performance benchmarks for indoor and outdoor terminations, heat-shrink and cold-shrink joints, and screen earthing kits designed for extruded power cables operating between 3.3 kV and 33 kV.  Local Fine-Tuned LLM Domain-adapted extraction & ambiguity detection BGE-M3 Dense Retrieval Semantic vector search over verified BIS corpus Rule-Based Guardrail Version verification & QCO compliance check 100% Local Processing \u2022 Zero Data Egress \u2022 Explainable AI  StandardIQ \u2014 Smart India Hackathon 2026 \u2022 Team Neuroverse  Bureau of Indian Standards (BIS) Procurement Compliance \u2022 Government-Deployable",
+    "cards_count": 3,
+    "cards": [
+      {
+        "raw_text": "#1\nIS 14255: 1995\nISI Mark (Scheme I)\nActive\n82% Match\n(81.9%)\nAerial Bunched Cables for Working Voltages up to and Including 1100 V\nEVIDENCE\n\nCovers overhead distribution cables comprising insulated phase conductors bundled around a bare or insulated aluminium alloy neutral/messenger wire, designed for rural electrification and theft-resistant low-voltage power distribution.",
+        "lines": [
+          "#1",
+          "IS 14255: 1995",
+          "ISI Mark (Scheme I)",
+          "Active",
+          "82% Match",
+          "(81.9%)",
+          "Aerial Bunched Cables for Working Voltages up to and Including 1100 V",
+          "EVIDENCE",
+          "Covers overhead distribution cables comprising insulated phase conductors bundled around a bare or insulated aluminium alloy neutral/messenger wire, designed for rural electrification and theft-resistant low-voltage power distribution."
+        ]
+      },
+      {
+        "raw_text": "#2\nIS 7098 (Part 2): 2011\nISI Mark (Scheme I)\nActive\n68% Match\n(68.0%)\nCrosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV\nEVIDENCE\n\nCovers medium and high voltage XLPE insulated power cables rated from 3.3 kV up to 33 kV, specifying triple-extrusion conductor and insulation screening, moisture barrier options, and impulse voltage withstand tests.",
+        "lines": [
+          "#2",
+          "IS 7098 (Part 2): 2011",
+          "ISI Mark (Scheme I)",
+          "Active",
+          "68% Match",
+          "(68.0%)",
+          "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV",
+          "EVIDENCE",
+          "Covers medium and high voltage XLPE insulated power cables rated from 3.3 kV up to 33 kV, specifying triple-extrusion conductor and insulation screening, moisture barrier options, and impulse voltage withstand tests."
+        ]
+      },
+      {
+        "raw_text": "#3\nIS 13573 (Part 1): 2021\nISI Mark (Scheme I)\nActive\n68% Match\n(67.9%)\nCable Accessories for Extruded Power Cables for Rated Voltages from 3.3 kV up to and Including 33 kV \u2014 Part 1: Test Requirements\nEVIDENCE\n\nSpecifies electrical test sequences and performance benchmarks for indoor and outdoor terminations, heat-shrink and cold-shrink joints, and screen earthing kits designed for extruded power cables operating between 3.3 kV and 33 kV.",
+        "lines": [
+          "#3",
+          "IS 13573 (Part 1): 2021",
+          "ISI Mark (Scheme I)",
+          "Active",
+          "68% Match",
+          "(67.9%)",
+          "Cable Accessories for Extruded Power Cables for Rated Voltages from 3.3 kV up to and Including 33 kV \u2014 Part 1: Test Requirements",
+          "EVIDENCE",
+          "Specifies electrical test sequences and performance benchmarks for indoor and outdoor terminations, heat-shrink and cold-shrink joints, and screen earthing kits designed for extruded power cables operating between 3.3 kV and 33 kV."
+        ]
+      }
+    ],
+    "screenshot": "C:\\Users\\tarun\\Downloads\\COLLEGE\\projects\\standardiq\\backend\\ui_screenshots\\query_3_aerial_bunched.png"
+  }
+]
