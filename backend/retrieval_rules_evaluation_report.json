@@ -1,0 +1,1555 @@
+{
+  "model_used": "BAAI/bge-small-en-v1.5",
+  "total_queries": 18,
+  "hit_at_1_count": 10,
+  "hit_at_1_pct": 55.55555555555556,
+  "hit_at_3_count": 17,
+  "hit_at_3_pct": 94.44444444444444,
+  "human_review_count": 3,
+  "confidence_threshold": 0.72,
+  "results": [
+    {
+      "id": "query-01",
+      "query": "Supply of 1.1 kV grade, 3.5 core x 70 sq.mm stranded aluminium conductor, heavy duty PVC insulated, galvanized flat steel strip armoured, overall PVC sheathed electric power cable for outdoor distribution feeder.",
+      "expected_primary": "IS 1554 (Part 1): 1988",
+      "expected_allied": [
+        "IS 8130: 2013",
+        "IS 5831: 1984",
+        "IS 3975: 1999"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": false,
+      "top_1_hit": false,
+      "top_3_hit": true,
+      "requires_human_review": false,
+      "human_review_reason": null,
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 694: 2010",
+          "title": "Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V",
+          "scope_text": "Specifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V).",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7667,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 10810 (Part 5): 1984",
+            "IS 10810 (Part 6): 1984",
+            "IS 10810 (Part 43): 1984",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 10810 (Part 5): 1984": "test_method",
+            "IS 10810 (Part 6): 1984": "test_method",
+            "IS 10810 (Part 43): 1984": "test_method",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 1554 (Part 1): 1988",
+          "title": "PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V",
+          "scope_text": "Covers design, manufacturing tolerances, insulation thickness, armouring, and routine testing for armoured and unarmoured heavy-duty PVC insulated power and control cables used in industrial electricity distribution up to 1.1 kV.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7666,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 3975: 1999",
+            "IS 10810 (Part 5): 1984",
+            "IS 10810 (Part 7): 1984",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 3975: 1999": "material_standard",
+            "IS 10810 (Part 5): 1984": "test_method",
+            "IS 10810 (Part 7): 1984": "test_method",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 1554 (Part 2): 1988",
+          "title": "PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 11 kV",
+          "scope_text": "Applies to medium-voltage PVC insulated armoured cables suitable for operating voltages between 3.3 kV and 11 kV, detailing electrostatic screening requirements, dielectric tests, and insulation compounding.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7587,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 3975: 1999",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 3975: 1999": "material_standard",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    },
+    {
+      "id": "query-02",
+      "query": "Procurement of single core 4.0 sq.mm multi-stranded high conductivity electrolytic copper conductor, PVC insulated unsheathed flexible domestic wiring cables for conduit concealed wiring rated up to 1100V with ISI marking.",
+      "expected_primary": "IS 694: 2010",
+      "expected_allied": [
+        "IS 8130: 2013",
+        "IS 5831: 1984"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": false,
+      "top_1_hit": true,
+      "top_3_hit": true,
+      "requires_human_review": false,
+      "human_review_reason": null,
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 694: 2010",
+          "title": "Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V",
+          "scope_text": "Specifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V).",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.8205,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 10810 (Part 5): 1984",
+            "IS 10810 (Part 6): 1984",
+            "IS 10810 (Part 43): 1984",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 10810 (Part 5): 1984": "test_method",
+            "IS 10810 (Part 6): 1984": "test_method",
+            "IS 10810 (Part 43): 1984": "test_method",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 14255: 1995",
+          "title": "Aerial Bunched Cables for Working Voltages up to and Including 1100 V",
+          "scope_text": "Covers overhead distribution cables comprising insulated phase conductors bundled around a bare or insulated aluminium alloy neutral/messenger wire, designed for rural electrification and theft-resistant low-voltage power distribution.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7629,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 398 (Part 4): 1994",
+            "IS 5831: 1984",
+            "IS 10810 (Part 7): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 398 (Part 4): 1994": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 10810 (Part 7): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 398 (Part 5): 1992",
+          "title": "Aluminium Conductors for Overhead Transmission Purposes \u2014 Part 5: Aluminium Conductors, Galvanized Steel-Reinforced for Extra High Voltage (400 kV and Above)",
+          "scope_text": "Prescribes surface finish criteria, corona prevention limits, high-strength steel core specs, and bundle configuration requirements for ACSR conductors engineered for 400 kV, 765 kV, and ultra-high-voltage overhead transmission lines.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7618,
+          "normative_references": [
+            "IS 1885 (Part 32): 1993"
+          ],
+          "reference_type": {
+            "IS 1885 (Part 32): 1993": "terminology_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    },
+    {
+      "id": "query-03",
+      "query": "Supply and delivery of 11 kV (E) grade, 3 core 185 sq mm compacted stranded aluminium conductor, crosslinked polyethylene (XLPE) insulated, extruded semi-conducting screen, galvanized steel strip armoured and outer PVC sheathed power cables.",
+      "expected_primary": "IS 7098 (Part 2): 2011",
+      "expected_allied": [
+        "IS 8130: 2013",
+        "IS 3975: 1999",
+        "IS 16269: 2014"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": false,
+      "top_1_hit": true,
+      "top_3_hit": true,
+      "requires_human_review": false,
+      "human_review_reason": null,
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 7098 (Part 2): 2011",
+          "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV",
+          "scope_text": "Covers medium and high voltage XLPE insulated power cables rated from 3.3 kV up to 33 kV, specifying triple-extrusion conductor and insulation screening, moisture barrier options, and impulse voltage withstand tests.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7462,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 3975: 1999",
+            "IS 10810 (Part 45): 1984",
+            "IS 16269: 2014"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 3975: 1999": "material_standard",
+            "IS 10810 (Part 45): 1984": "test_method",
+            "IS 16269: 2014": "safety_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 7098 (Part 3): 1993",
+          "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 3: For Working Voltages from 66 kV up to and Including 220 kV",
+          "scope_text": "Outlines specifications for extra-high-voltage (EHV) underground transmission cables insulated with dry-cured XLPE, covering working voltages from 66 kV to 220 kV with metallic radial water barriers and degassing procedures.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7275,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 10810 (Part 45): 1984",
+            "IS 16269: 2014"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 10810 (Part 45): 1984": "test_method",
+            "IS 16269: 2014": "safety_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 14255: 1995",
+          "title": "Aerial Bunched Cables for Working Voltages up to and Including 1100 V",
+          "scope_text": "Covers overhead distribution cables comprising insulated phase conductors bundled around a bare or insulated aluminium alloy neutral/messenger wire, designed for rural electrification and theft-resistant low-voltage power distribution.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7254,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 398 (Part 4): 1994",
+            "IS 5831: 1984",
+            "IS 10810 (Part 7): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 398 (Part 4): 1994": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 10810 (Part 7): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    },
+    {
+      "id": "query-04",
+      "query": "Procurement of 1100 V working voltage, 4 core 120 sq.mm stranded copper conductor XLPE insulated and extruded PVC sheathed armoured power cables designed for 90 deg C continuous conductor operating temperature.",
+      "expected_primary": "IS 7098 (Part 1): 1988",
+      "expected_allied": [
+        "IS 8130: 2013",
+        "IS 3975: 1999"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": false,
+      "top_1_hit": true,
+      "top_3_hit": true,
+      "requires_human_review": false,
+      "human_review_reason": null,
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 7098 (Part 1): 1988",
+          "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V",
+          "scope_text": "Specifies requirements for low-tension power cables insulated with thermosetting cross-linked polyethylene (XLPE) for rated operational voltages up to 1.1 kV, designed for higher continuous operating temperature limits (90\u00b0C) compared to PVC.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.783,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 3975: 1999",
+            "IS 10810 (Part 7): 1984",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 3975: 1999": "material_standard",
+            "IS 10810 (Part 7): 1984": "test_method",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 7098 (Part 2): 2011",
+          "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV",
+          "scope_text": "Covers medium and high voltage XLPE insulated power cables rated from 3.3 kV up to 33 kV, specifying triple-extrusion conductor and insulation screening, moisture barrier options, and impulse voltage withstand tests.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7729,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 3975: 1999",
+            "IS 10810 (Part 45): 1984",
+            "IS 16269: 2014"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 3975: 1999": "material_standard",
+            "IS 10810 (Part 45): 1984": "test_method",
+            "IS 16269: 2014": "safety_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 694: 2010",
+          "title": "Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V",
+          "scope_text": "Specifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V).",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7678,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 10810 (Part 5): 1984",
+            "IS 10810 (Part 6): 1984",
+            "IS 10810 (Part 43): 1984",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 10810 (Part 5): 1984": "test_method",
+            "IS 10810 (Part 6): 1984": "test_method",
+            "IS 10810 (Part 43): 1984": "test_method",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    },
+    {
+      "id": "query-05",
+      "query": "Turnkey supply of LT Aerial Bunched Cables (ABC) 3x50 + 1x35 (insulated messenger aluminium alloy) + 1x16 sq.mm street light core, XLPE insulated for rural overhead distribution lines operating at 1.1 kV.",
+      "expected_primary": "IS 14255: 1995",
+      "expected_allied": [
+        "IS 398 (Part 4): 1994",
+        "IS 8130: 2013"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": false,
+      "top_1_hit": true,
+      "top_3_hit": true,
+      "requires_human_review": false,
+      "human_review_reason": null,
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 14255: 1995",
+          "title": "Aerial Bunched Cables for Working Voltages up to and Including 1100 V",
+          "scope_text": "Covers overhead distribution cables comprising insulated phase conductors bundled around a bare or insulated aluminium alloy neutral/messenger wire, designed for rural electrification and theft-resistant low-voltage power distribution.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.849,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 398 (Part 4): 1994",
+            "IS 5831: 1984",
+            "IS 10810 (Part 7): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 398 (Part 4): 1994": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 10810 (Part 7): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 7098 (Part 2): 2011",
+          "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV",
+          "scope_text": "Covers medium and high voltage XLPE insulated power cables rated from 3.3 kV up to 33 kV, specifying triple-extrusion conductor and insulation screening, moisture barrier options, and impulse voltage withstand tests.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7466,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 3975: 1999",
+            "IS 10810 (Part 45): 1984",
+            "IS 16269: 2014"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 3975: 1999": "material_standard",
+            "IS 10810 (Part 45): 1984": "test_method",
+            "IS 16269: 2014": "safety_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 7098 (Part 3): 1993",
+          "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 3: For Working Voltages from 66 kV up to and Including 220 kV",
+          "scope_text": "Outlines specifications for extra-high-voltage (EHV) underground transmission cables insulated with dry-cured XLPE, covering working voltages from 66 kV to 220 kV with metallic radial water barriers and degassing procedures.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.736,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 10810 (Part 45): 1984",
+            "IS 16269: 2014"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 10810 (Part 45): 1984": "test_method",
+            "IS 16269: 2014": "safety_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    },
+    {
+      "id": "query-06",
+      "query": "Supply of 132 kV single core 630 sq.mm copper conductor, extra high voltage crosslinked polyethylene (XLPE) insulated cable with corrugated aluminium metallic radial sheath and outer anti-termite HDPE jacket.",
+      "expected_primary": "IS 7098 (Part 3): 1993",
+      "expected_allied": [
+        "IS 8130: 2013",
+        "IS 16269: 2014"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": false,
+      "top_1_hit": false,
+      "top_3_hit": true,
+      "requires_human_review": false,
+      "human_review_reason": null,
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 7098 (Part 2): 2011",
+          "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV",
+          "scope_text": "Covers medium and high voltage XLPE insulated power cables rated from 3.3 kV up to 33 kV, specifying triple-extrusion conductor and insulation screening, moisture barrier options, and impulse voltage withstand tests.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7897,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 3975: 1999",
+            "IS 10810 (Part 45): 1984",
+            "IS 16269: 2014"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 3975: 1999": "material_standard",
+            "IS 10810 (Part 45): 1984": "test_method",
+            "IS 16269: 2014": "safety_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 7098 (Part 3): 1993",
+          "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 3: For Working Voltages from 66 kV up to and Including 220 kV",
+          "scope_text": "Outlines specifications for extra-high-voltage (EHV) underground transmission cables insulated with dry-cured XLPE, covering working voltages from 66 kV to 220 kV with metallic radial water barriers and degassing procedures.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7741,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 10810 (Part 45): 1984",
+            "IS 16269: 2014"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 10810 (Part 45): 1984": "test_method",
+            "IS 16269: 2014": "safety_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 7098 (Part 1): 1988",
+          "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V",
+          "scope_text": "Specifies requirements for low-tension power cables insulated with thermosetting cross-linked polyethylene (XLPE) for rated operational voltages up to 1.1 kV, designed for higher continuous operating temperature limits (90\u00b0C) compared to PVC.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7725,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 3975: 1999",
+            "IS 10810 (Part 7): 1984",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 3975: 1999": "material_standard",
+            "IS 10810 (Part 7): 1984": "test_method",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    },
+    {
+      "id": "query-07",
+      "query": "Procurement of ACSR 'Panther' conductor consisting of 30 aluminium strands of 3.00 mm diameter and 7 galvanized steel core wires of 3.00 mm for 66 kV / 132 kV double circuit overhead transmission towers.",
+      "expected_primary": "IS 398 (Part 2): 1996",
+      "expected_allied": [
+        "IS 1885 (Part 32): 1993"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": false,
+      "top_1_hit": false,
+      "top_3_hit": true,
+      "requires_human_review": false,
+      "human_review_reason": null,
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 398 (Part 5): 1992",
+          "title": "Aluminium Conductors for Overhead Transmission Purposes \u2014 Part 5: Aluminium Conductors, Galvanized Steel-Reinforced for Extra High Voltage (400 kV and Above)",
+          "scope_text": "Prescribes surface finish criteria, corona prevention limits, high-strength steel core specs, and bundle configuration requirements for ACSR conductors engineered for 400 kV, 765 kV, and ultra-high-voltage overhead transmission lines.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.8307,
+          "normative_references": [
+            "IS 1885 (Part 32): 1993"
+          ],
+          "reference_type": {
+            "IS 1885 (Part 32): 1993": "terminology_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 398 (Part 2): 1996",
+          "title": "Aluminium Conductors for Overhead Transmission Purposes \u2014 Part 2: Aluminium Conductors, Galvanized Steel-Reinforced",
+          "scope_text": "Defines construction, wire dimensions, tensile breaking strength, and DC resistance for aluminium conductors reinforced with a galvanized steel wire core (ACSR) for long-span high-voltage overhead transmission lines.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.8213,
+          "normative_references": [
+            "IS 1885 (Part 32): 1993"
+          ],
+          "reference_type": {
+            "IS 1885 (Part 32): 1993": "terminology_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 398 (Part 3): 1976",
+          "title": "Aluminium Conductors for Overhead Transmission Purposes \u2014 Part 3: Aluminium Conductors, Aluminized Steel-Reinforced",
+          "scope_text": "Specifies requirements for aluminium conductors reinforced with aluminized (aluminium-coated) steel wire cores intended for high corrosion environments such as coastal transmission routes.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "Voluntary",
+          "similarity_score": 0.7803,
+          "normative_references": [
+            "IS 1885 (Part 32): 1993"
+          ],
+          "reference_type": {
+            "IS 1885 (Part 32): 1993": "terminology_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    },
+    {
+      "id": "query-08",
+      "query": "Supply of All Aluminium Alloy Conductors (AAAC) 50 sq.mm 'Hazel' for high-corrosion coastal distribution network replacement, heat-treated Al-Mg-Si alloy with minimum breaking strength 14.8 kN.",
+      "expected_primary": "IS 398 (Part 4): 1994",
+      "expected_allied": [
+        "IS 1885 (Part 32): 1993"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": false,
+      "top_1_hit": true,
+      "top_3_hit": true,
+      "requires_human_review": false,
+      "human_review_reason": null,
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 398 (Part 4): 1994",
+          "title": "Aluminium Conductors for Overhead Transmission Purposes \u2014 Part 4: Aluminium Alloy Stranded Conductors",
+          "scope_text": "Specifies physical and electrical parameters for heat-treated aluminium-magnesium-silicon alloy stranded conductors (AAAC) providing superior corrosion resistance and strength-to-weight ratio for overhead distribution.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7912,
+          "normative_references": [
+            "IS 1885 (Part 32): 1993"
+          ],
+          "reference_type": {
+            "IS 1885 (Part 32): 1993": "terminology_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 398 (Part 1): 1996",
+          "title": "Aluminium Conductors for Overhead Transmission Purposes \u2014 Part 1: Aluminium Stranded Conductors",
+          "scope_text": "Specifies electrical and mechanical characteristics for all-aluminium stranded bare conductors (AAC) used for short-span overhead electrical power distribution networks.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7297,
+          "normative_references": [
+            "IS 1885 (Part 32): 1993"
+          ],
+          "reference_type": {
+            "IS 1885 (Part 32): 1993": "terminology_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 398 (Part 3): 1976",
+          "title": "Aluminium Conductors for Overhead Transmission Purposes \u2014 Part 3: Aluminium Conductors, Aluminized Steel-Reinforced",
+          "scope_text": "Specifies requirements for aluminium conductors reinforced with aluminized (aluminium-coated) steel wire cores intended for high corrosion environments such as coastal transmission routes.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "Voluntary",
+          "similarity_score": 0.7253,
+          "normative_references": [
+            "IS 1885 (Part 32): 1993"
+          ],
+          "reference_type": {
+            "IS 1885 (Part 32): 1993": "terminology_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    },
+    {
+      "id": "query-09",
+      "query": "Procurement of heavy-duty flexible elastomer insulated and tough polychloroprene sheathed trailing cable, 3.3 kV rated, 3 power cores with integrated pilot and earth continuity cores for underground coal cutter machines.",
+      "expected_primary": "IS 14494: 1998",
+      "expected_allied": [
+        "IS 8130: 2013",
+        "IS 6380: 1984",
+        "IS 9968 (Part 2): 2002"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": false,
+      "top_1_hit": true,
+      "top_3_hit": true,
+      "requires_human_review": false,
+      "human_review_reason": null,
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 14494: 1998",
+          "title": "Elastomer Insulated Flexible Trailing Cables for Use in Coal Mines",
+          "scope_text": "Prescribes stringent safety construction, flame retardancy, tear-resistant outer sheath formulation, and individual core screening for flexible trailing power cables powering machinery in underground and open-cast coal mines.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.8225,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 6380: 1984",
+            "IS 10810 (Part 53): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 6380: 1984": "material_standard",
+            "IS 10810 (Part 53): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 2593: 1984",
+          "title": "Flexible Cables for Miners' Cap-Lamps",
+          "scope_text": "Specifies flexible twin-core elastomer or polychloroprene insulated and sheathed cables designed to link portable miner cap-lamps with belt-worn accumulator batteries in hazardous underground environments.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.768,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 6380: 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 6380: 1984": "material_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 9968 (Part 2): 2002",
+          "title": "Elastomer Insulated Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV",
+          "scope_text": "Specifies high-voltage flexible elastomeric power cables for severe mechanical stress applications such as open-cast mining excavators, dredge equipment, and high-voltage portable substations operating from 3.3 kV to 33 kV.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7605,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 6380: 1984",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 6380: 1984": "material_standard",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    },
+    {
+      "id": "query-10",
+      "query": "Supply of 70 sq.mm extra-flexible annealed copper conductor single core rubber elastomer insulated welding cables for manual metal arc welding machine connection, oil and heat resistant.",
+      "expected_primary": "IS 9857: 1990",
+      "expected_allied": [
+        "IS 8130: 2013",
+        "IS 6380: 1984"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": false,
+      "top_1_hit": true,
+      "top_3_hit": true,
+      "requires_human_review": false,
+      "human_review_reason": null,
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 9857: 1990",
+          "title": "Welding Cables",
+          "scope_text": "Specifies requirements for highly flexible single-core copper and aluminium cables insulated with tough elastomeric or PVC compounds designed for connecting arc welding equipment to electrode holders under heavy thermal and mechanical duty.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7802,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 6380: 1984",
+            "IS 10810 (Part 5): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 6380: 1984": "material_standard",
+            "IS 10810 (Part 5): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 6380: 1984",
+          "title": "Elastomeric Insulation and Sheath of Electric Cables",
+          "scope_text": "Specifies physical and electrical requirements for rubber and synthetic elastomeric compounds (including natural rubber, silicone, ethylene propylene rubber, and chloroprene) used for cable insulation and protective outer sheaths.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "None",
+          "similarity_score": 0.7792,
+          "normative_references": [
+            "IS 10810 (Part 7): 1984",
+            "IS 10810 (Part 11): 1984"
+          ],
+          "reference_type": {
+            "IS 10810 (Part 7): 1984": "test_method",
+            "IS 10810 (Part 11): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 434 (Part 1): 1964",
+          "title": "Rubber Insulated Cables \u2014 Part 1: With Copper Conductors",
+          "scope_text": "Legacy historical Indian Standard covering natural rubber vulcanized insulated cables with copper conductors; formally withdrawn and superseded by the IS 9968 elastomer cable series.",
+          "status": "Withdrawn",
+          "sector": "Electrical",
+          "certification": "None",
+          "similarity_score": 0.7885,
+          "normative_references": [
+            "IS 9968 (Part 1): 1988"
+          ],
+          "reference_type": {
+            "IS 9968 (Part 1): 1988": "material_standard"
+          },
+          "superseded_warning": true,
+          "warning_reason": "Withdrawn standard (superseded by IS 9857: 1990 for arc welding cables and IS 9968 for elastomer cables) \u2014 do not cite in new tenders."
+        }
+      ]
+    },
+    {
+      "id": "query-11",
+      "query": "Supply of polywrap PVC/polyester dual insulated copper winding wires of 1.2 mm nominal diameter for continuous water-submerged induction motors operating in deep borewells.",
+      "expected_primary": "IS 8783 (Part 2): 1995",
+      "expected_allied": [
+        "IS 8783 (Part 1): 1995",
+        "IS 8130: 2013"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": false,
+      "top_1_hit": false,
+      "top_3_hit": true,
+      "requires_human_review": false,
+      "human_review_reason": null,
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 8783 (Part 1): 1995",
+          "title": "Winding Wires for Submersible Motors \u2014 Part 1: Conductor Data",
+          "scope_text": "Covers conductor dimensions, resistance, and elongation characteristics of solid copper conductors utilized in polymer-insulated submersible pump motor windings.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.8068,
+          "normative_references": [
+            "IS 8130: 2013"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 8783 (Part 2): 1995",
+          "title": "Winding Wires for Submersible Motors \u2014 Part 2: Specifications for Individual Wires",
+          "scope_text": "Details polymer insulation requirements (PVC, crosslinked polyethylene, or polyamide) for water-immersed submersible pump motor winding wires operating continuously under hydrostatic pressure.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.8019,
+          "normative_references": [
+            "IS 8783 (Part 1): 1995",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8783 (Part 1): 1995": "material_standard",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 694: 2010",
+          "title": "Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V",
+          "scope_text": "Specifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V).",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7522,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 10810 (Part 5): 1984",
+            "IS 10810 (Part 6): 1984",
+            "IS 10810 (Part 43): 1984",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 10810 (Part 5): 1984": "test_method",
+            "IS 10810 (Part 6): 1984": "test_method",
+            "IS 10810 (Part 43): 1984": "test_method",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    },
+    {
+      "id": "query-12",
+      "query": "Supply of 4-pair thermocouple compensating and extension cable, Type K (Chromel-Alumel), KX grade, individual and overall aluminium foil shielding with drain wire and heat-resistant PVC sheath for boiler temperature instrumentation.",
+      "expected_primary": "IS 8784: 1987",
+      "expected_allied": [
+        "IS 5831: 1984"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": false,
+      "top_1_hit": true,
+      "top_3_hit": true,
+      "requires_human_review": false,
+      "human_review_reason": null,
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 8784: 1987",
+          "title": "Thermocouple Compensating Cables",
+          "scope_text": "Covers requirements for single and multi-pair insulated extension and compensating cables connecting thermocouples to temperature indicating instruments, detailing thermoelectric voltage tolerance classes.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7757,
+          "normative_references": [
+            "IS 5831: 1984",
+            "IS 10810 (Part 43): 1984"
+          ],
+          "reference_type": {
+            "IS 5831: 1984": "material_standard",
+            "IS 10810 (Part 43): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 7098 (Part 1): 1988",
+          "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V",
+          "scope_text": "Specifies requirements for low-tension power cables insulated with thermosetting cross-linked polyethylene (XLPE) for rated operational voltages up to 1.1 kV, designed for higher continuous operating temperature limits (90\u00b0C) compared to PVC.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.6976,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 3975: 1999",
+            "IS 10810 (Part 7): 1984",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 3975: 1999": "material_standard",
+            "IS 10810 (Part 7): 1984": "test_method",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 9857: 1990",
+          "title": "Welding Cables",
+          "scope_text": "Specifies requirements for highly flexible single-core copper and aluminium cables insulated with tough elastomeric or PVC compounds designed for connecting arc welding equipment to electrode holders under heavy thermal and mechanical duty.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.6909,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 6380: 1984",
+            "IS 10810 (Part 5): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 6380: 1984": "material_standard",
+            "IS 10810 (Part 5): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    },
+    {
+      "id": "query-13",
+      "query": "Procurement of outdoor heat-shrinkable termination kits for 33 kV, 3-core 300 sq.mm XLPE insulated armoured aluminium power cables including stress control tubes and grounding braid.",
+      "expected_primary": "IS 13573 (Part 1): 2021",
+      "expected_allied": [
+        "IS 7098 (Part 2): 2011"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": false,
+      "top_1_hit": false,
+      "top_3_hit": true,
+      "requires_human_review": false,
+      "human_review_reason": null,
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 7098 (Part 2): 2011",
+          "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV",
+          "scope_text": "Covers medium and high voltage XLPE insulated power cables rated from 3.3 kV up to 33 kV, specifying triple-extrusion conductor and insulation screening, moisture barrier options, and impulse voltage withstand tests.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7489,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 3975: 1999",
+            "IS 10810 (Part 45): 1984",
+            "IS 16269: 2014"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 3975: 1999": "material_standard",
+            "IS 10810 (Part 45): 1984": "test_method",
+            "IS 16269: 2014": "safety_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 7098 (Part 1): 1988",
+          "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V",
+          "scope_text": "Specifies requirements for low-tension power cables insulated with thermosetting cross-linked polyethylene (XLPE) for rated operational voltages up to 1.1 kV, designed for higher continuous operating temperature limits (90\u00b0C) compared to PVC.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7376,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 3975: 1999",
+            "IS 10810 (Part 7): 1984",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 3975: 1999": "material_standard",
+            "IS 10810 (Part 7): 1984": "test_method",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 13573 (Part 1): 2021",
+          "title": "Cable Accessories for Extruded Power Cables for Rated Voltages from 3.3 kV up to and Including 33 kV \u2014 Part 1: Test Requirements",
+          "scope_text": "Specifies electrical test sequences and performance benchmarks for indoor and outdoor terminations, heat-shrink and cold-shrink joints, and screen earthing kits designed for extruded power cables operating between 3.3 kV and 33 kV.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7362,
+          "normative_references": [
+            "IS 7098 (Part 2): 2011",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 7098 (Part 2): 2011": "material_standard",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    },
+    {
+      "id": "query-14",
+      "query": "Procurement of heavy-duty preservative treated wooden drums and steel-flanged reels with barrel diameter 1400 mm suitable for packaging and transport of 11 kV HT power cables without exceeding minimum bending radius.",
+      "expected_primary": "IS 10418: 1982",
+      "expected_allied": [
+        "IS 1885 (Part 32): 1993"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": false,
+      "top_1_hit": true,
+      "top_3_hit": true,
+      "requires_human_review": true,
+      "human_review_reason": "Top match similarity score (70.2%) is below the 72% confidence threshold. The procurement specification may be incomplete, ambiguous, or contain conflicting constraints; manual engineering review is recommended before publishing in tender documents.",
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 10418: 1982",
+          "title": "Drums for Electric Cables",
+          "scope_text": "Specifies construction, dimensional limits, barrel diameters, flange thickness, and preservative treatment for wooden and steel reels/drums used for packaging, transporting, and paying out electric cables.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "Voluntary",
+          "similarity_score": 0.702,
+          "normative_references": [
+            "IS 1885 (Part 32): 1993"
+          ],
+          "reference_type": {
+            "IS 1885 (Part 32): 1993": "terminology_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 13573 (Part 2): 2021",
+          "title": "Cable Accessories for Extruded Power Cables for Rated Voltages from 3.3 kV up to 33 kV \u2014 Part 2: Cable Joints and Stop Ends",
+          "scope_text": "Covers mechanical, thermal cycling under load, and dielectric withstand tests for straight-through joints, branch joints, transition joints, and stop ends fitted on MV extruded insulation power cables.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.6686,
+          "normative_references": [
+            "IS 13573 (Part 1): 2021",
+            "IS 7098 (Part 2): 2011"
+          ],
+          "reference_type": {
+            "IS 13573 (Part 1): 2021": "test_method",
+            "IS 7098 (Part 2): 2011": "material_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 14255: 1995",
+          "title": "Aerial Bunched Cables for Working Voltages up to and Including 1100 V",
+          "scope_text": "Covers overhead distribution cables comprising insulated phase conductors bundled around a bare or insulated aluminium alloy neutral/messenger wire, designed for rural electrification and theft-resistant low-voltage power distribution.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.6626,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 398 (Part 4): 1994",
+            "IS 5831: 1984",
+            "IS 10810 (Part 7): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 398 (Part 4): 1994": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 10810 (Part 7): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    },
+    {
+      "id": "query-15",
+      "query": "Tender for supply of 1.1 kV grade multi-core PVC insulated copper conductor power cables with steel wire armouring for coastal refinery substation, without specifying thermal operating rating.",
+      "expected_primary": "IS 1554 (Part 1): 1988",
+      "expected_allied": [
+        "IS 8130: 2013",
+        "IS 3975: 1999"
+      ],
+      "is_incomplete": true,
+      "has_exclusion": false,
+      "top_1_hit": false,
+      "top_3_hit": true,
+      "requires_human_review": true,
+      "human_review_reason": "Top match similarity score (70.9%) is below the 72% confidence threshold. The procurement specification may be incomplete, ambiguous, or contain conflicting constraints; manual engineering review is recommended before publishing in tender documents.",
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 694: 2010",
+          "title": "Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V",
+          "scope_text": "Specifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V).",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7092,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 10810 (Part 5): 1984",
+            "IS 10810 (Part 6): 1984",
+            "IS 10810 (Part 43): 1984",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 10810 (Part 5): 1984": "test_method",
+            "IS 10810 (Part 6): 1984": "test_method",
+            "IS 10810 (Part 43): 1984": "test_method",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 1554 (Part 1): 1988",
+          "title": "PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V",
+          "scope_text": "Covers design, manufacturing tolerances, insulation thickness, armouring, and routine testing for armoured and unarmoured heavy-duty PVC insulated power and control cables used in industrial electricity distribution up to 1.1 kV.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.6954,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 3975: 1999",
+            "IS 10810 (Part 5): 1984",
+            "IS 10810 (Part 7): 1984",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 3975: 1999": "material_standard",
+            "IS 10810 (Part 5): 1984": "test_method",
+            "IS 10810 (Part 7): 1984": "test_method",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 1554 (Part 1): 1976",
+          "title": "PVC Insulated (Heavy Duty) Electric Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V",
+          "scope_text": "Former revision of the Indian Standard for heavy-duty PVC insulated power cables up to 1.1 kV; formally superseded by IS 1554 (Part 1): 1988. Kept in database for detecting outdated tender references.",
+          "status": "Superseded",
+          "sector": "Electrical",
+          "certification": "None",
+          "similarity_score": 0.6772,
+          "normative_references": [
+            "IS 1554 (Part 1): 1988"
+          ],
+          "reference_type": {
+            "IS 1554 (Part 1): 1988": "material_standard"
+          },
+          "superseded_warning": true,
+          "warning_reason": "Superseded by IS 1554 (Part 1): 1988 \u2014 do not cite in new tenders."
+        }
+      ]
+    },
+    {
+      "id": "query-16",
+      "query": "Procurement of 3-core 95 sq.mm stranded aluminium conductor crosslinked polyethylene (XLPE) insulated and galvanized steel strip armoured power distribution cable with extruded inner and outer PVC sheath.",
+      "expected_primary": "IS 7098 (Part 1): 1988",
+      "expected_allied": [
+        "IS 7098 (Part 2): 2011",
+        "IS 8130: 2013"
+      ],
+      "is_incomplete": true,
+      "has_exclusion": false,
+      "top_1_hit": false,
+      "top_3_hit": true,
+      "requires_human_review": false,
+      "human_review_reason": null,
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 7098 (Part 2): 2011",
+          "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV",
+          "scope_text": "Covers medium and high voltage XLPE insulated power cables rated from 3.3 kV up to 33 kV, specifying triple-extrusion conductor and insulation screening, moisture barrier options, and impulse voltage withstand tests.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.8048,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 3975: 1999",
+            "IS 10810 (Part 45): 1984",
+            "IS 16269: 2014"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 3975: 1999": "material_standard",
+            "IS 10810 (Part 45): 1984": "test_method",
+            "IS 16269: 2014": "safety_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 7098 (Part 1): 1988",
+          "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 1: For Working Voltages up to and Including 1100 V",
+          "scope_text": "Specifies requirements for low-tension power cables insulated with thermosetting cross-linked polyethylene (XLPE) for rated operational voltages up to 1.1 kV, designed for higher continuous operating temperature limits (90\u00b0C) compared to PVC.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.8033,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 3975: 1999",
+            "IS 10810 (Part 7): 1984",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 3975: 1999": "material_standard",
+            "IS 10810 (Part 7): 1984": "test_method",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 7098 (Part 3): 1993",
+          "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 3: For Working Voltages from 66 kV up to and Including 220 kV",
+          "scope_text": "Outlines specifications for extra-high-voltage (EHV) underground transmission cables insulated with dry-cured XLPE, covering working voltages from 66 kV to 220 kV with metallic radial water barriers and degassing procedures.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7793,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 10810 (Part 45): 1984",
+            "IS 16269: 2014"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 10810 (Part 45): 1984": "test_method",
+            "IS 16269: 2014": "safety_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    },
+    {
+      "id": "query-17",
+      "query": "Procurement of flexible multi-core copper control cables for indoor control panel wiring only; strictly non-armoured, not weatherproof, and not suitable for wet trench or direct burial.",
+      "expected_primary": "IS 694: 2010",
+      "expected_allied": [
+        "IS 8130: 2013",
+        "IS 5831: 1984"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": true,
+      "top_1_hit": false,
+      "top_3_hit": false,
+      "requires_human_review": true,
+      "human_review_reason": "Top match similarity score (68.0%) is below the 72% confidence threshold. The procurement specification may be incomplete, ambiguous, or contain conflicting constraints; manual engineering review is recommended before publishing in tender documents.",
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 9857: 1990",
+          "title": "Welding Cables",
+          "scope_text": "Specifies requirements for highly flexible single-core copper and aluminium cables insulated with tough elastomeric or PVC compounds designed for connecting arc welding equipment to electrode holders under heavy thermal and mechanical duty.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.6799,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 6380: 1984",
+            "IS 10810 (Part 5): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 6380: 1984": "material_standard",
+            "IS 10810 (Part 5): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 398 (Part 5): 1992",
+          "title": "Aluminium Conductors for Overhead Transmission Purposes \u2014 Part 5: Aluminium Conductors, Galvanized Steel-Reinforced for Extra High Voltage (400 kV and Above)",
+          "scope_text": "Prescribes surface finish criteria, corona prevention limits, high-strength steel core specs, and bundle configuration requirements for ACSR conductors engineered for 400 kV, 765 kV, and ultra-high-voltage overhead transmission lines.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.673,
+          "normative_references": [
+            "IS 1885 (Part 32): 1993"
+          ],
+          "reference_type": {
+            "IS 1885 (Part 32): 1993": "terminology_standard"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 14255: 1995",
+          "title": "Aerial Bunched Cables for Working Voltages up to and Including 1100 V",
+          "scope_text": "Covers overhead distribution cables comprising insulated phase conductors bundled around a bare or insulated aluminium alloy neutral/messenger wire, designed for rural electrification and theft-resistant low-voltage power distribution.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.6725,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 398 (Part 4): 1994",
+            "IS 5831: 1984",
+            "IS 10810 (Part 7): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 398 (Part 4): 1994": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 10810 (Part 7): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    },
+    {
+      "id": "query-18",
+      "query": "Supply of 1100 V fire-safe wiring cables for underground metro passenger terminal concourses, strictly low-smoke zero-halogen (LSZH); must contain zero PVC, zero halogen compounds, and emit non-toxic gases under fire conditions.",
+      "expected_primary": "IS 17048: 2018",
+      "expected_allied": [
+        "IS 8130: 2013",
+        "IS 10810 (Part 58): 1998",
+        "IS 10810 (Part 61): 1988"
+      ],
+      "is_incomplete": false,
+      "has_exclusion": true,
+      "top_1_hit": true,
+      "top_3_hit": true,
+      "requires_human_review": false,
+      "human_review_reason": null,
+      "retrieved_results": [
+        {
+          "rank": 1,
+          "standard_id": "IS 17048: 2018",
+          "title": "Halogen Free Flame Retardant (HFFR) Cables for Working Voltages up to and Including 1100 V",
+          "scope_text": "Specifies requirements for low-smoke, zero-halogen, flame-retardant thermoplastic and cross-linked power and wiring cables up to 1.1 kV intended for high-occupancy buildings, hospitals, airports, and underground metro transit corridors.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.7249,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 10810 (Part 53): 1984",
+            "IS 10810 (Part 58): 1998",
+            "IS 10810 (Part 61): 1988",
+            "IS 10810 (Part 63): 1993"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 10810 (Part 53): 1984": "test_method",
+            "IS 10810 (Part 58): 1998": "test_method",
+            "IS 10810 (Part 61): 1988": "test_method",
+            "IS 10810 (Part 63): 1993": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 2,
+          "standard_id": "IS 14255: 1995",
+          "title": "Aerial Bunched Cables for Working Voltages up to and Including 1100 V",
+          "scope_text": "Covers overhead distribution cables comprising insulated phase conductors bundled around a bare or insulated aluminium alloy neutral/messenger wire, designed for rural electrification and theft-resistant low-voltage power distribution.",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.6798,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 398 (Part 4): 1994",
+            "IS 5831: 1984",
+            "IS 10810 (Part 7): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 398 (Part 4): 1994": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 10810 (Part 7): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        },
+        {
+          "rank": 3,
+          "standard_id": "IS 694: 2010",
+          "title": "Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V",
+          "scope_text": "Specifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V).",
+          "status": "Active",
+          "sector": "Electrical",
+          "certification": "ISI Mark (Scheme I)",
+          "similarity_score": 0.6734,
+          "normative_references": [
+            "IS 8130: 2013",
+            "IS 5831: 1984",
+            "IS 10810 (Part 5): 1984",
+            "IS 10810 (Part 6): 1984",
+            "IS 10810 (Part 43): 1984",
+            "IS 10810 (Part 45): 1984"
+          ],
+          "reference_type": {
+            "IS 8130: 2013": "material_standard",
+            "IS 5831: 1984": "material_standard",
+            "IS 10810 (Part 5): 1984": "test_method",
+            "IS 10810 (Part 6): 1984": "test_method",
+            "IS 10810 (Part 43): 1984": "test_method",
+            "IS 10810 (Part 45): 1984": "test_method"
+          },
+          "superseded_warning": false,
+          "warning_reason": null
+        }
+      ]
+    }
+  ]
+}
