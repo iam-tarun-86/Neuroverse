@@ -1,0 +1,796 @@
+[
+  {
+    "standard_id": "IS 694: 2010",
+    "title": "Polyvinyl Chloride Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductors for Rated Voltages up to and Including 450/750 V",
+    "scope_text": "Specifies constructional dimensions, electrical characteristics, and physical requirements for single-core and multi-core PVC insulated wires and flexible cords suitable for fixed electrical wiring installations and domestic appliances operating at rated AC voltages up to 450/750 V (often applied up to 1100 V).",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013",
+      "IS 5831: 1984",
+      "IS 10810 (Part 5): 1984",
+      "IS 10810 (Part 6): 1984",
+      "IS 10810 (Part 43): 1984",
+      "IS 10810 (Part 45): 1984"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard",
+      "IS 5831: 1984": "material_standard",
+      "IS 10810 (Part 5): 1984": "test_method",
+      "IS 10810 (Part 6): 1984": "test_method",
+      "IS 10810 (Part 43): 1984": "test_method",
+      "IS 10810 (Part 45): 1984": "test_method"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 1554 (Part 1): 1988",
+    "title": "PVC Insulated (Heavy Duty) Electric Cables — Part 1: For Working Voltages up to and Including 1100 V",
+    "scope_text": "Covers design, manufacturing tolerances, insulation thickness, armouring, and routine testing for armoured and unarmoured heavy-duty PVC insulated power and control cables used in industrial electricity distribution up to 1.1 kV.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013",
+      "IS 5831: 1984",
+      "IS 3975: 1999",
+      "IS 10810 (Part 5): 1984",
+      "IS 10810 (Part 7): 1984",
+      "IS 10810 (Part 45): 1984"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard",
+      "IS 5831: 1984": "material_standard",
+      "IS 3975: 1999": "material_standard",
+      "IS 10810 (Part 5): 1984": "test_method",
+      "IS 10810 (Part 7): 1984": "test_method",
+      "IS 10810 (Part 45): 1984": "test_method"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 1554 (Part 2): 1988",
+    "title": "PVC Insulated (Heavy Duty) Electric Cables — Part 2: For Working Voltages from 3.3 kV up to and Including 11 kV",
+    "scope_text": "Applies to medium-voltage PVC insulated armoured cables suitable for operating voltages between 3.3 kV and 11 kV, detailing electrostatic screening requirements, dielectric tests, and insulation compounding.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013",
+      "IS 5831: 1984",
+      "IS 3975: 1999",
+      "IS 10810 (Part 45): 1984"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard",
+      "IS 5831: 1984": "material_standard",
+      "IS 3975: 1999": "material_standard",
+      "IS 10810 (Part 45): 1984": "test_method"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 7098 (Part 1): 1988",
+    "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables — Part 1: For Working Voltages up to and Including 1100 V",
+    "scope_text": "Specifies requirements for low-tension power cables insulated with thermosetting cross-linked polyethylene (XLPE) for rated operational voltages up to 1.1 kV, designed for higher continuous operating temperature limits (90°C) compared to PVC.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013",
+      "IS 5831: 1984",
+      "IS 3975: 1999",
+      "IS 10810 (Part 7): 1984",
+      "IS 10810 (Part 45): 1984"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard",
+      "IS 5831: 1984": "material_standard",
+      "IS 3975: 1999": "material_standard",
+      "IS 10810 (Part 7): 1984": "test_method",
+      "IS 10810 (Part 45): 1984": "test_method"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 7098 (Part 2): 2011",
+    "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables — Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV",
+    "scope_text": "Covers medium and high voltage XLPE insulated power cables rated from 3.3 kV up to 33 kV, specifying triple-extrusion conductor and insulation screening, moisture barrier options, and impulse voltage withstand tests.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013",
+      "IS 5831: 1984",
+      "IS 3975: 1999",
+      "IS 10810 (Part 45): 1984",
+      "IS 16269: 2014"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard",
+      "IS 5831: 1984": "material_standard",
+      "IS 3975: 1999": "material_standard",
+      "IS 10810 (Part 45): 1984": "test_method",
+      "IS 16269: 2014": "safety_standard"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 7098 (Part 3): 1993",
+    "title": "Crosslinked Polyethylene Insulated Thermoplastic Sheathed Cables — Part 3: For Working Voltages from 66 kV up to and Including 220 kV",
+    "scope_text": "Outlines specifications for extra-high-voltage (EHV) underground transmission cables insulated with dry-cured XLPE, covering working voltages from 66 kV to 220 kV with metallic radial water barriers and degassing procedures.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013",
+      "IS 10810 (Part 45): 1984",
+      "IS 16269: 2014"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard",
+      "IS 10810 (Part 45): 1984": "test_method",
+      "IS 16269: 2014": "safety_standard"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 9968 (Part 1): 1988",
+    "title": "Elastomer Insulated Cables — Part 1: For Working Voltages up to and Including 1100 V",
+    "scope_text": "Covers rubber/elastomer insulated single-core and multi-core flexible power cables for mobile machinery, industrial cranes, shipboard wiring, and temporary site installations operating up to 1.1 kV.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013",
+      "IS 6380: 1984",
+      "IS 10810 (Part 7): 1984",
+      "IS 10810 (Part 45): 1984"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard",
+      "IS 6380: 1984": "material_standard",
+      "IS 10810 (Part 7): 1984": "test_method",
+      "IS 10810 (Part 45): 1984": "test_method"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 9968 (Part 2): 2002",
+    "title": "Elastomer Insulated Cables — Part 2: For Working Voltages from 3.3 kV up to and Including 33 kV",
+    "scope_text": "Specifies high-voltage flexible elastomeric power cables for severe mechanical stress applications such as open-cast mining excavators, dredge equipment, and high-voltage portable substations operating from 3.3 kV to 33 kV.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013",
+      "IS 6380: 1984",
+      "IS 10810 (Part 45): 1984"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard",
+      "IS 6380: 1984": "material_standard",
+      "IS 10810 (Part 45): 1984": "test_method"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 14255: 1995",
+    "title": "Aerial Bunched Cables for Working Voltages up to and Including 1100 V",
+    "scope_text": "Covers overhead distribution cables comprising insulated phase conductors bundled around a bare or insulated aluminium alloy neutral/messenger wire, designed for rural electrification and theft-resistant low-voltage power distribution.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013",
+      "IS 398 (Part 4): 1994",
+      "IS 5831: 1984",
+      "IS 10810 (Part 7): 1984"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard",
+      "IS 398 (Part 4): 1994": "material_standard",
+      "IS 5831: 1984": "material_standard",
+      "IS 10810 (Part 7): 1984": "test_method"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 8130: 2013",
+    "title": "Conductors for Insulated Electric Cables and Flexible Cords",
+    "scope_text": "Defines nominal cross-sectional areas, maximum DC resistance values, solid and stranded configurations, and elongation properties for copper and aluminium conductors used in all insulated cables.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 12444: 2020",
+      "IS 10810 (Part 5): 1984"
+    ],
+    "reference_type": {
+      "IS 12444: 2020": "material_standard",
+      "IS 10810 (Part 5): 1984": "test_method"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 5831: 1984",
+    "title": "PVC Insulation and Sheath of Electric Cables",
+    "scope_text": "Specifies chemical composition, physical properties, thermal stability, tensile strength, and cold bend requirements for various grades of PVC insulation and sheathing compounds applied to electric cables.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 10810 (Part 7): 1984",
+      "IS 10810 (Part 10): 1984",
+      "IS 10810 (Part 11): 1984"
+    ],
+    "reference_type": {
+      "IS 10810 (Part 7): 1984": "test_method",
+      "IS 10810 (Part 10): 1984": "test_method",
+      "IS 10810 (Part 11): 1984": "test_method"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 6380: 1984",
+    "title": "Elastomeric Insulation and Sheath of Electric Cables",
+    "scope_text": "Specifies physical and electrical requirements for rubber and synthetic elastomeric compounds (including natural rubber, silicone, ethylene propylene rubber, and chloroprene) used for cable insulation and protective outer sheaths.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 10810 (Part 7): 1984",
+      "IS 10810 (Part 11): 1984"
+    ],
+    "reference_type": {
+      "IS 10810 (Part 7): 1984": "test_method",
+      "IS 10810 (Part 11): 1984": "test_method"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 3975: 1999",
+    "title": "Low Carbon Galvanized Steel Wires, Formed Wires and Tapes for Armouring of Cables",
+    "scope_text": "Covers dimensional criteria, tensile strength, zinc coating mass, and uniformity tests for mild steel galvanized round wires, flat formed wires, and strip tapes utilized for mechanical cable armouring.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 10810 (Part 37): 1984"
+    ],
+    "reference_type": {
+      "IS 10810 (Part 37): 1984": "test_method"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 398 (Part 1): 1996",
+    "title": "Aluminium Conductors for Overhead Transmission Purposes — Part 1: Aluminium Stranded Conductors",
+    "scope_text": "Specifies electrical and mechanical characteristics for all-aluminium stranded bare conductors (AAC) used for short-span overhead electrical power distribution networks.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 1885 (Part 32): 1993"
+    ],
+    "reference_type": {
+      "IS 1885 (Part 32): 1993": "terminology_standard"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 398 (Part 2): 1996",
+    "title": "Aluminium Conductors for Overhead Transmission Purposes — Part 2: Aluminium Conductors, Galvanized Steel-Reinforced",
+    "scope_text": "Defines construction, wire dimensions, tensile breaking strength, and DC resistance for aluminium conductors reinforced with a galvanized steel wire core (ACSR) for long-span high-voltage overhead transmission lines.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 1885 (Part 32): 1993"
+    ],
+    "reference_type": {
+      "IS 1885 (Part 32): 1993": "terminology_standard"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 398 (Part 3): 1976",
+    "title": "Aluminium Conductors for Overhead Transmission Purposes — Part 3: Aluminium Conductors, Aluminized Steel-Reinforced",
+    "scope_text": "Specifies requirements for aluminium conductors reinforced with aluminized (aluminium-coated) steel wire cores intended for high corrosion environments such as coastal transmission routes.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 1885 (Part 32): 1993"
+    ],
+    "reference_type": {
+      "IS 1885 (Part 32): 1993": "terminology_standard"
+    },
+    "certification": "Voluntary"
+  },
+  {
+    "standard_id": "IS 398 (Part 4): 1994",
+    "title": "Aluminium Conductors for Overhead Transmission Purposes — Part 4: Aluminium Alloy Stranded Conductors",
+    "scope_text": "Specifies physical and electrical parameters for heat-treated aluminium-magnesium-silicon alloy stranded conductors (AAAC) providing superior corrosion resistance and strength-to-weight ratio for overhead distribution.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 1885 (Part 32): 1993"
+    ],
+    "reference_type": {
+      "IS 1885 (Part 32): 1993": "terminology_standard"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 398 (Part 5): 1992",
+    "title": "Aluminium Conductors for Overhead Transmission Purposes — Part 5: Aluminium Conductors, Galvanized Steel-Reinforced for Extra High Voltage (400 kV and Above)",
+    "scope_text": "Prescribes surface finish criteria, corona prevention limits, high-strength steel core specs, and bundle configuration requirements for ACSR conductors engineered for 400 kV, 765 kV, and ultra-high-voltage overhead transmission lines.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 1885 (Part 32): 1993"
+    ],
+    "reference_type": {
+      "IS 1885 (Part 32): 1993": "terminology_standard"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 9857: 1990",
+    "title": "Welding Cables",
+    "scope_text": "Specifies requirements for highly flexible single-core copper and aluminium cables insulated with tough elastomeric or PVC compounds designed for connecting arc welding equipment to electrode holders under heavy thermal and mechanical duty.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013",
+      "IS 6380: 1984",
+      "IS 10810 (Part 5): 1984"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard",
+      "IS 6380: 1984": "material_standard",
+      "IS 10810 (Part 5): 1984": "test_method"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 8784: 1987",
+    "title": "Thermocouple Compensating Cables",
+    "scope_text": "Covers requirements for single and multi-pair insulated extension and compensating cables connecting thermocouples to temperature indicating instruments, detailing thermoelectric voltage tolerance classes.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 5831: 1984",
+      "IS 10810 (Part 43): 1984"
+    ],
+    "reference_type": {
+      "IS 5831: 1984": "material_standard",
+      "IS 10810 (Part 43): 1984": "test_method"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 14494: 1998",
+    "title": "Elastomer Insulated Flexible Trailing Cables for Use in Coal Mines",
+    "scope_text": "Prescribes stringent safety construction, flame retardancy, tear-resistant outer sheath formulation, and individual core screening for flexible trailing power cables powering machinery in underground and open-cast coal mines.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013",
+      "IS 6380: 1984",
+      "IS 10810 (Part 53): 1984"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard",
+      "IS 6380: 1984": "material_standard",
+      "IS 10810 (Part 53): 1984": "test_method"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 2593: 1984",
+    "title": "Flexible Cables for Miners' Cap-Lamps",
+    "scope_text": "Specifies flexible twin-core elastomer or polychloroprene insulated and sheathed cables designed to link portable miner cap-lamps with belt-worn accumulator batteries in hazardous underground environments.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013",
+      "IS 6380: 1984"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard",
+      "IS 6380: 1984": "material_standard"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 5950: 1984",
+    "title": "Shot Firing Cables",
+    "scope_text": "Covers twin-core single-wire and flexible cables intended for connecting electric blasting exploders to electric detonator circuits in mining, tunnelling, and quarrying blasting operations.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013",
+      "IS 5831: 1984",
+      "IS 10810 (Part 5): 1984"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard",
+      "IS 5831: 1984": "material_standard",
+      "IS 10810 (Part 5): 1984": "test_method"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 17048: 2018",
+    "title": "Halogen Free Flame Retardant (HFFR) Cables for Working Voltages up to and Including 1100 V",
+    "scope_text": "Specifies requirements for low-smoke, zero-halogen, flame-retardant thermoplastic and cross-linked power and wiring cables up to 1.1 kV intended for high-occupancy buildings, hospitals, airports, and underground metro transit corridors.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013",
+      "IS 10810 (Part 53): 1984",
+      "IS 10810 (Part 58): 1998",
+      "IS 10810 (Part 61): 1988",
+      "IS 10810 (Part 63): 1993"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard",
+      "IS 10810 (Part 53): 1984": "test_method",
+      "IS 10810 (Part 58): 1998": "test_method",
+      "IS 10810 (Part 61): 1988": "test_method",
+      "IS 10810 (Part 63): 1993": "test_method"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 10418: 1982",
+    "title": "Drums for Electric Cables",
+    "scope_text": "Specifies construction, dimensional limits, barrel diameters, flange thickness, and preservative treatment for wooden and steel reels/drums used for packaging, transporting, and paying out electric cables.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 1885 (Part 32): 1993"
+    ],
+    "reference_type": {
+      "IS 1885 (Part 32): 1993": "terminology_standard"
+    },
+    "certification": "Voluntary"
+  },
+  {
+    "standard_id": "IS 12444: 2020",
+    "title": "Continuously Cast Copper Wire Rod for Electrical Purposes",
+    "scope_text": "Defines chemical composition, electrical conductivity (min 100% IACS), oxygen content, and surface defect tolerances for electrolytic grade continuous cast copper wire rods used for drawing electrical conductors.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 8783 (Part 1): 1995",
+    "title": "Winding Wires for Submersible Motors — Part 1: Conductor Data",
+    "scope_text": "Covers conductor dimensions, resistance, and elongation characteristics of solid copper conductors utilized in polymer-insulated submersible pump motor windings.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 8783 (Part 2): 1995",
+    "title": "Winding Wires for Submersible Motors — Part 2: Specifications for Individual Wires",
+    "scope_text": "Details polymer insulation requirements (PVC, crosslinked polyethylene, or polyamide) for water-immersed submersible pump motor winding wires operating continuously under hydrostatic pressure.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8783 (Part 1): 1995",
+      "IS 10810 (Part 45): 1984"
+    ],
+    "reference_type": {
+      "IS 8783 (Part 1): 1995": "material_standard",
+      "IS 10810 (Part 45): 1984": "test_method"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 13730 (Part 0/Sec 1): 2012",
+    "title": "Specifications for Particular Types of Winding Wires — Part 0: General Requirements — Section 1: Enamelled Round Copper Wire",
+    "scope_text": "Specifies general requirements, dimensional tolerances, cut-through temperature, heat shock, flexibility, and breakdown voltage test criteria for enamelled round copper magnet wires used in electrical motor and transformer windings.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 12444: 2020"
+    ],
+    "reference_type": {
+      "IS 12444: 2020": "material_standard"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 13730 (Part 8): 2014",
+    "title": "Specifications for Particular Types of Winding Wires — Part 8: Polyesterimide Enamelled Round Copper Wire, Class 180",
+    "scope_text": "Prescribes requirements for Class 180 thermal index polyesterimide resin enamelled round copper winding wires used for high-temperature electrical coils, motors, and relays.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 13730 (Part 0/Sec 1): 2012"
+    ],
+    "reference_type": {
+      "IS 13730 (Part 0/Sec 1): 2012": "material_standard"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 13730 (Part 13): 2012",
+    "title": "Specifications for Particular Types of Winding Wires — Part 13: Polyester or Polyesterimide Overcoated with Polyamide-Imide Enamelled Round Copper Wire, Class 200",
+    "scope_text": "Specifies dual-coat dual-polymer enamelled round copper winding wire rated for Class 200 continuous thermal performance, suitable for heavy duty industrial motors and hermetic compressor units.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 13730 (Part 0/Sec 1): 2012"
+    ],
+    "reference_type": {
+      "IS 13730 (Part 0/Sec 1): 2012": "material_standard"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 1255: 1983",
+    "title": "Code of Practice for Installation and Maintenance of Power Cables up to and Including 33 kV Rating",
+    "scope_text": "Provides comprehensive engineering rules and best practices for trench excavation, direct burial depth, conduit routing, cable pulling tensions, bending radii, jointing techniques, and periodic dielectric maintenance for power cables up to 33 kV.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 1554 (Part 1): 1988",
+      "IS 7098 (Part 1): 1988",
+      "IS 7098 (Part 2): 2011",
+      "IS 10810 (Part 45): 1984"
+    ],
+    "reference_type": {
+      "IS 1554 (Part 1): 1988": "material_standard",
+      "IS 7098 (Part 1): 1988": "material_standard",
+      "IS 7098 (Part 2): 2011": "material_standard",
+      "IS 10810 (Part 45): 1984": "test_method"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 732: 2019",
+    "title": "Code of Practice for Electrical Wiring Installations",
+    "scope_text": "National code detailing design, selection of cable cross-sections, thermal insulation factors, short-circuit protection coordination, earthing arrangements, and inspection verification for building electrical wiring systems.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 694: 2010",
+      "IS 1554 (Part 1): 1988",
+      "IS 7098 (Part 1): 1988"
+    ],
+    "reference_type": {
+      "IS 694: 2010": "material_standard",
+      "IS 1554 (Part 1): 1988": "material_standard",
+      "IS 7098 (Part 1): 1988": "material_standard"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 1885 (Part 32): 1993",
+    "title": "Electrotechnical Vocabulary — Part 32: Electric Cables",
+    "scope_text": "Standardizes authoritative technical terminology, definitions, symbols, and classifications for power, control, and telecommunication electric cables, conductors, and insulation systems.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [],
+    "reference_type": {},
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 16269: 2014",
+    "title": "Recommended Short Circuit Ratings of Electric Cables",
+    "scope_text": "Provides engineering calculation methods and thermal limitation curves for determining the maximum allowable symmetrical short-circuit current ratings for copper and aluminium cables with PVC, XLPE, and EPR insulations.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 1554 (Part 1): 1988",
+      "IS 7098 (Part 1): 1988",
+      "IS 7098 (Part 2): 2011"
+    ],
+    "reference_type": {
+      "IS 1554 (Part 1): 1988": "material_standard",
+      "IS 7098 (Part 1): 1988": "material_standard",
+      "IS 7098 (Part 2): 2011": "material_standard"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 13573 (Part 1): 2021",
+    "title": "Cable Accessories for Extruded Power Cables for Rated Voltages from 3.3 kV up to and Including 33 kV — Part 1: Test Requirements",
+    "scope_text": "Specifies electrical test sequences and performance benchmarks for indoor and outdoor terminations, heat-shrink and cold-shrink joints, and screen earthing kits designed for extruded power cables operating between 3.3 kV and 33 kV.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 7098 (Part 2): 2011",
+      "IS 10810 (Part 45): 1984"
+    ],
+    "reference_type": {
+      "IS 7098 (Part 2): 2011": "material_standard",
+      "IS 10810 (Part 45): 1984": "test_method"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 13573 (Part 2): 2021",
+    "title": "Cable Accessories for Extruded Power Cables for Rated Voltages from 3.3 kV up to 33 kV — Part 2: Cable Joints and Stop Ends",
+    "scope_text": "Covers mechanical, thermal cycling under load, and dielectric withstand tests for straight-through joints, branch joints, transition joints, and stop ends fitted on MV extruded insulation power cables.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 13573 (Part 1): 2021",
+      "IS 7098 (Part 2): 2011"
+    ],
+    "reference_type": {
+      "IS 13573 (Part 1): 2021": "test_method",
+      "IS 7098 (Part 2): 2011": "material_standard"
+    },
+    "certification": "ISI Mark (Scheme I)"
+  },
+  {
+    "standard_id": "IS 10810 (Part 0): 1984",
+    "title": "Methods of Test for Cables — Part 0: General",
+    "scope_text": "Establishes general testing conditions, sample conditioning guidelines, atmospheric temperature ranges, and instrument accuracy requirements applicable across all individual test parts of the IS 10810 cable testing series.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [],
+    "reference_type": {},
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 10810 (Part 5): 1984",
+    "title": "Methods of Test for Cables — Part 5: Conductor Resistance Test",
+    "scope_text": "Describes standard laboratory test procedures using Kelvin double bridge or digital micro-ohmmeter to measure DC electrical resistance of cable conductors and verify compliance with maximum limits normalized to 20°C.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 8130: 2013"
+    ],
+    "reference_type": {
+      "IS 8130: 2013": "material_standard"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 10810 (Part 6): 1984",
+    "title": "Methods of Test for Cables — Part 6: Thickness of Insulation and Sheath",
+    "scope_text": "Specifies optical micrometer and pin-gauge measurement methods to determine minimum, average, and nominal wall thicknesses of extruded cable insulation and protective outer sheathing.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 10810 (Part 0): 1984"
+    ],
+    "reference_type": {
+      "IS 10810 (Part 0): 1984": "test_method"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 10810 (Part 7): 1984",
+    "title": "Methods of Test for Cables — Part 7: Tensile Strength and Elongation at Break of Thermoplastic and Elastomeric Insulation and Sheath",
+    "scope_text": "Details dumb-bell specimen preparation and tensile testing machine methodology for determining mechanical tensile strength and percentage elongation at break for cable polymers before and after accelerated ageing.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 5831: 1984",
+      "IS 6380: 1984"
+    ],
+    "reference_type": {
+      "IS 5831: 1984": "material_standard",
+      "IS 6380: 1984": "material_standard"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 10810 (Part 11): 1984",
+    "title": "Methods of Test for Cables — Part 11: Thermal Ageing in Air",
+    "scope_text": "Specifies accelerated thermal oven ageing exposure conditions for polymeric insulation and jacket samples to predict long-term thermal degradation under operating service temperatures.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 10810 (Part 7): 1984"
+    ],
+    "reference_type": {
+      "IS 10810 (Part 7): 1984": "test_method"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 10810 (Part 43): 1984",
+    "title": "Methods of Test for Cables — Part 43: Insulation Resistance",
+    "scope_text": "Prescribes high-resistance electrometer and megohmmeter procedures for evaluating insulation resistance per unit length of cable immersed in water at specified test temperatures.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 10810 (Part 0): 1984"
+    ],
+    "reference_type": {
+      "IS 10810 (Part 0): 1984": "test_method"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 10810 (Part 45): 1984",
+    "title": "Methods of Test for Cables — Part 45: High Voltage Test",
+    "scope_text": "Outlines AC power-frequency and DC spark dielectric withstand voltage test procedures applied between conductor cores and outer metallic armour/water bath to detect pinholes and dielectric breakdown.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 10810 (Part 0): 1984"
+    ],
+    "reference_type": {
+      "IS 10810 (Part 0): 1984": "test_method"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 10810 (Part 53): 1984",
+    "title": "Methods of Test for Cables — Part 53: Flammability Test",
+    "scope_text": "Defines laboratory Bunsen burner apparatus and vertical test method to assess flame propagation resistance and self-extinguishing behavior of single insulated electric cables.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 10810 (Part 0): 1984"
+    ],
+    "reference_type": {
+      "IS 10810 (Part 0): 1984": "test_method"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 10810 (Part 58): 1998",
+    "title": "Methods of Test for Cables — Part 58: Oxygen Index Test",
+    "scope_text": "Specifies the test procedure for determining the minimum percentage concentration of oxygen in an oxygen-nitrogen mixture that will support candle-like combustion of cable jacketing materials at ambient temperature.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 17048: 2018"
+    ],
+    "reference_type": {
+      "IS 17048: 2018": "safety_standard"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 10810 (Part 61): 1988",
+    "title": "Methods of Test for Cables — Part 61: Flame Retardant Smoke Density Test",
+    "scope_text": "Specifies photometric test apparatus and measuring procedures for evaluating light transmittance and smoke obscuration generated by burning cable samples in an enclosed cube chamber.",
+    "status": "Active",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 17048: 2018"
+    ],
+    "reference_type": {
+      "IS 17048: 2018": "safety_standard"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 1554 (Part 1): 1976",
+    "title": "PVC Insulated (Heavy Duty) Electric Cables — Part 1: For Working Voltages up to and Including 1100 V",
+    "scope_text": "Former revision of the Indian Standard for heavy-duty PVC insulated power cables up to 1.1 kV; formally superseded by IS 1554 (Part 1): 1988. Kept in database for detecting outdated tender references.",
+    "status": "Superseded",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 1554 (Part 1): 1988"
+    ],
+    "reference_type": {
+      "IS 1554 (Part 1): 1988": "material_standard"
+    },
+    "certification": "None"
+  },
+  {
+    "standard_id": "IS 434 (Part 1): 1964",
+    "title": "Rubber Insulated Cables — Part 1: With Copper Conductors",
+    "scope_text": "Legacy historical Indian Standard covering natural rubber vulcanized insulated cables with copper conductors; formally withdrawn and superseded by the IS 9968 elastomer cable series.",
+    "status": "Withdrawn",
+    "sector": "Electrical",
+    "normative_references": [
+      "IS 9968 (Part 1): 1988"
+    ],
+    "reference_type": {
+      "IS 9968 (Part 1): 1988": "material_standard"
+    },
+    "certification": "None"
+  }
+]
