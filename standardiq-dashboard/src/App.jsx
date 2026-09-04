@@ -13,32 +13,39 @@ import {
   RotateCcw,
   CheckCircle2,
   AlertTriangle,
+  AlertCircle,
   XCircle,
   Award,
   SlidersHorizontal,
   Info,
   Loader2,
-  Check
+  Check,
+  GitFork
 } from 'lucide-react'
-import {
-  MOCK_STANDARDS_BY_SECTOR,
-  DEFAULT_MOCK_RESULTS,
-  MOCK_EXTRACTED_REQUIREMENTS
-} from './data/mockStandards'
+// MOCK_EXTRACTED_REQUIREMENTS removed — Tier 1 real LLM extraction now used
 
 export default function App() {
   const [procurementText, setProcurementText] = useState('')
   const [sector, setSector] = useState('Electrical')
   const [isProcessing, setIsProcessing] = useState(false)
-  const [loadingPhase, setLoadingPhase] = useState('parsing')
+  const [loadingPhase, setLoadingPhase] = useState('retrieval')
   const [results, setResults] = useState(null)
   const [extractedData, setExtractedData] = useState(null)
+  const [error, setError] = useState(null)
+  const [latencyMs, setLatencyMs] = useState(null)
+  const [requiresHumanReview, setRequiresHumanReview] = useState(false)
+  const [humanReviewReason, setHumanReviewReason] = useState(null)
 
   const samplePrompts = [
     {
       label: 'PVC Cables (Electrical)',
       sector: 'Electrical',
       text: 'Procurement of heavy-duty PVC insulated and sheathed power cables for outdoor industrial distribution, 1.1kV rated voltage, multi-core copper conductor with steel wire armouring.'
+    },
+    {
+      label: 'Arc Welding Cable (query-10)',
+      sector: 'Electrical',
+      text: 'Supply of 70 sq.mm extra-flexible annealed copper conductor single core rubber elastomer insulated welding cables for manual metal arc welding machine connection, oil and heat resistant.'
     },
     {
       label: 'PPC Cement (Civil)',
@@ -52,40 +59,95 @@ export default function App() {
     }
   ]
 
-  const handleRecommend = (e) => {
+  const handleRecommend = async (e) => {
     if (e) e.preventDefault()
     if (!procurementText.trim() || isProcessing) return
 
     setIsProcessing(true)
+    setError(null)
     setResults(null)
     setExtractedData(null)
-    setLoadingPhase('parsing')
+    setLatencyMs(null)
+    setLoadingPhase('retrieval')
 
-    // Phase 1: Requirement parsing
-    const timer1 = setTimeout(() => {
-      setLoadingPhase('retrieval')
-    }, 450)
+    const startTime = performance.now()
 
-    // Phase 2: Vector retrieval & rule validation
-    const timer2 = setTimeout(() => {
-      setLoadingPhase('verification')
-    }, 850)
+    try {
+      const response = await fetch('http://127.0.0.1:8000/recommend', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          query: procurementText.trim(),
+          top_k: 3
+        })
+      })
 
-    // Phase 3: Finalize after ~1.25s (1-1.5s simulated processing)
-    const timer3 = setTimeout(() => {
-      const matchedData = MOCK_STANDARDS_BY_SECTOR[sector] || DEFAULT_MOCK_RESULTS
-      const sortedResults = [...matchedData].sort((a, b) => b.confidence - a.confidence)
-      const parsedReqs = MOCK_EXTRACTED_REQUIREMENTS[sector] || MOCK_EXTRACTED_REQUIREMENTS.Electrical
+      if (!response.ok) {
+        const errorDetail = await response.json().catch(() => null)
+        throw new Error(
+          errorDetail?.detail || `API responded with status ${response.status}`
+        )
+      }
 
-      setResults(sortedResults)
-      setExtractedData(parsedReqs)
+      const data = await response.json()
+      const elapsed = Math.round(performance.now() - startTime)
+      setLatencyMs(elapsed)
+
+      // Map real API response into existing result card structure
+      const mappedResults = (data.results || []).map((item) => ({
+        standard_id: item.standard_id,
+        title: item.title,
+        confidence: Math.round((item.similarity_score || 0) * 100),
+        similarity_score: item.similarity_score,
+        status: item.status,
+        certification: item.certification,
+        sector: item.sector,
+        explanation: item.scope_text,
+        superseded_warning: item.superseded_warning || false,
+        warning_reason: item.warning_reason || null,
+        allied_standards: item.allied_standards || null
+      }))
+
+      setResults(mappedResults)
+      setRequiresHumanReview(data.requires_human_review || false)
+      setHumanReviewReason(data.human_review_reason || null)
+
+      // ── Tier 1: Wire real LLM extraction into the UI ──
+      // Transform flat extraction fields into the {fields[], missing{}} shape the UI consumes.
+      const ext = data.extraction
+      if (ext) {
+        const fields = []
+        if (ext.voltage)     fields.push({ label: 'Voltage',     value: ext.voltage })
+        if (ext.material)    fields.push({ label: 'Material',    value: ext.material })
+        if (ext.environment) fields.push({ label: 'Environment', value: ext.environment })
+        if (ext.application) fields.push({ label: 'Application', value: ext.application })
+        if (ext.exclusions && ext.exclusions.length > 0) {
+          fields.push({ label: 'Exclusions', value: ext.exclusions.join('; ') })
+        }
+
+        const missingList = ext.missing_fields || []
+        const missing = missingList.length > 0
+          ? {
+              label: `Missing: ${missingList.slice(0, 2).join(', ')}${missingList.length > 2 ? ' +' + (missingList.length - 2) + ' more' : ''}`,
+              detail: `The following parameters were not found in the query and may be required for precise standard selection: ${missingList.join(', ')}.`
+            }
+          : null
+
+        setExtractedData({
+          fields,
+          missing,
+          _llmLatencyMs: ext.latency_ms,
+        })
+      }
+    } catch (err) {
+      console.error('StandardIQ Recommendation Error:', err)
+      setError(
+        'Backend not reachable — is the FastAPI server running on port 8000?'
+      )
+    } finally {
       setIsProcessing(false)
-    }, 1250)
-
-    return () => {
-      clearTimeout(timer1)
-      clearTimeout(timer2)
-      clearTimeout(timer3)
     }
   }
 
@@ -94,12 +156,20 @@ export default function App() {
     setSector(sample.sector)
     setResults(null)
     setExtractedData(null)
+    setError(null)
+    setLatencyMs(null)
+    setRequiresHumanReview(false)
+    setHumanReviewReason(null)
   }
 
   const handleClear = () => {
     setProcurementText('')
     setResults(null)
     setExtractedData(null)
+    setError(null)
+    setLatencyMs(null)
+    setRequiresHumanReview(false)
+    setHumanReviewReason(null)
   }
 
   // Confidence badge color mapping for light enterprise theme (high contrast against light backgrounds)
@@ -128,7 +198,7 @@ export default function App() {
     }
   }
 
-  // Status tag styling for Active vs Superseded on light background
+  // Status tag styling for Active vs Superseded/Withdrawn on light background
   const getStatusBadge = (status) => {
     if (status === 'Active') {
       return {
@@ -136,9 +206,15 @@ export default function App() {
         icon: <CheckCircle2 className="w-3.5 h-3.5 text-teal-700 shrink-0" />
       }
     }
+    if (status === 'Withdrawn') {
+      return {
+        style: 'bg-rose-50 text-rose-900 border-rose-300',
+        icon: <XCircle className="w-3.5 h-3.5 text-rose-700 shrink-0" />
+      }
+    }
     return {
       style: 'bg-rose-50 text-rose-900 border-rose-300',
-      icon: <XCircle className="w-3.5 h-3.5 text-rose-700 shrink-0" />
+      icon: <AlertTriangle className="w-3.5 h-3.5 text-rose-700 shrink-0" />
     }
   }
 
@@ -325,7 +401,7 @@ export default function App() {
           </form>
         </section>
 
-        {/* Dedicated Loading Processing Panel (Active during simulated 1-1.5s inference) */}
+        {/* Dedicated Loading Processing Panel (Active during real local inference) */}
         {isProcessing && (
           <section className="bg-white border border-teal-200 rounded-2xl p-6 sm:p-7 shadow-sm animate-fade-in">
             <div className="flex flex-col sm:flex-row items-center gap-5">
@@ -340,31 +416,48 @@ export default function App() {
               <div className="flex-1 text-center sm:text-left">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
                   <h3 className="text-base font-bold text-slate-900 tracking-tight flex items-center justify-center sm:justify-start gap-2">
-                    Analyzing specification...
+                    Querying Local Standards Engine...
                   </h3>
                   <span className="text-xs font-mono font-semibold text-teal-800 bg-teal-50 border border-teal-200 px-2.5 py-0.5 rounded-full self-center sm:self-auto">
-                    Local Inference Active
+                    Live Local Pipeline
                   </span>
                 </div>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  {loadingPhase === 'parsing' && 'Extracting technical parameters & detecting ambiguity via Fine-Tuned LLM...'}
-                  {loadingPhase === 'retrieval' && 'Generating BGE-M3 dense embeddings and querying ChromaDB vector store...'}
-                  {loadingPhase === 'verification' && 'Running rule-based verification against BIS Quality Control Orders (QCO)...'}
+                  Generating dense vector embeddings with local BGE model and ranking standards from ChromaDB...
                 </p>
 
                 {/* Micro Progress Track */}
                 <div className="mt-3.5 w-full bg-slate-100 rounded-full h-1.5 overflow-hidden border border-slate-200">
-                  <div
-                    className="bg-teal-700 h-1.5 rounded-full transition-all duration-300 ease-out"
-                    style={{
-                      width:
-                        loadingPhase === 'parsing'
-                          ? '35%'
-                          : loadingPhase === 'retrieval'
-                          ? '70%'
-                          : '95%'
-                    }}
-                  ></div>
+                  <div className="bg-teal-700 h-1.5 rounded-full w-2/3 animate-pulse"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Error Alert State */}
+        {error && !isProcessing && (
+          <section className="bg-rose-50 border border-rose-300 rounded-2xl p-5 sm:p-6 shadow-sm animate-fade-in">
+            <div className="flex items-start gap-3.5">
+              <div className="p-2.5 rounded-xl bg-rose-100 border border-rose-200 text-rose-700 shrink-0">
+                <AlertCircle className="w-5 h-5" />
+              </div>
+              <div className="flex-1">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                  <h3 className="text-sm sm:text-base font-bold text-rose-950 tracking-tight">
+                    Backend Connection Error
+                  </h3>
+                  <span className="text-[11px] font-mono font-semibold text-rose-800 bg-rose-100 px-2 py-0.5 rounded border border-rose-300 self-start sm:self-auto">
+                    FastAPI Offline
+                  </span>
+                </div>
+                <p className="text-xs text-rose-900 mt-1.5 leading-relaxed font-medium">
+                  {error}
+                </p>
+                <div className="mt-3 pt-3 border-t border-rose-200 flex flex-wrap items-center gap-2 text-[11px] text-rose-700 font-mono">
+                  <span>Target: <strong>http://127.0.0.1:8000/recommend</strong></span>
+                  <span>•</span>
+                  <span>Start Server: <code className="bg-white/80 px-1.5 py-0.5 rounded text-rose-950 font-semibold border border-rose-200">python -m uvicorn app.main:app --port 8000</code></span>
                 </div>
               </div>
             </div>
@@ -384,7 +477,10 @@ export default function App() {
                     Extracted Requirements
                   </h3>
                   <p className="text-xs text-slate-500">
-                    Structured technical parameters parsed by Local Fine-Tuned LLM
+                    Structured technical parameters — Local LLM (Qwen3.5-4B, air-gapped)
+                    {extractedData._llmLatencyMs != null && (
+                      <span className="ml-1.5 font-mono text-slate-400">{Math.round(extractedData._llmLatencyMs)}ms</span>
+                    )}
                   </p>
                 </div>
               </div>
@@ -392,12 +488,14 @@ export default function App() {
               <div className="flex items-center gap-2 self-start sm:self-auto">
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-teal-50 text-teal-800 border border-teal-200 font-mono">
                   <Check className="w-3 h-3 text-teal-700" />
-                  4 Parameters Identified
+                  {extractedData.fields.length} Parameter{extractedData.fields.length !== 1 ? 's' : ''} Identified
                 </span>
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-900 border border-amber-300 font-mono">
-                  <AlertTriangle className="w-3 h-3 text-amber-700" />
-                  1 Incomplete Warning
-                </span>
+                {extractedData.missing && (
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-900 border border-amber-300 font-mono">
+                    <AlertTriangle className="w-3 h-3 text-amber-700" />
+                    Incomplete Spec
+                  </span>
+                )}
               </div>
             </div>
 
@@ -413,29 +511,34 @@ export default function App() {
                 </div>
               ))}
 
-              {/* Warning Chip for Incomplete Specification (High contrast on light background) */}
-              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-amber-50 border border-amber-300 text-amber-900 shadow-2xs">
-                <AlertTriangle className="w-3.5 h-3.5 text-amber-700 shrink-0" />
-                <span>{extractedData.missing.label}</span>
-              </div>
+              {/* Warning Chip for Incomplete Specification (only when missing_fields present) */}
+              {extractedData.missing && (
+                <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-amber-50 border border-amber-300 text-amber-900 shadow-2xs">
+                  <AlertTriangle className="w-3.5 h-3.5 text-amber-700 shrink-0" />
+                  <span>{extractedData.missing.label}</span>
+                </div>
+              )}
             </div>
 
             {/* Subtext explaining the flagged missing requirement */}
-            <div className="mt-3.5 pt-3 border-t border-slate-100 flex items-start gap-2.5 text-xs text-amber-900 bg-amber-50/80 px-3.5 py-2.5 rounded-xl border border-amber-200">
-              <Info className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
-              <div>
-                <span className="font-bold text-amber-950">Requirement Guardrail: </span>
-                {extractedData.missing.detail}
+            {extractedData.missing && (
+              <div className="mt-3.5 pt-3 border-t border-slate-100 flex items-start gap-2.5 text-xs text-amber-900 bg-amber-50/80 px-3.5 py-2.5 rounded-xl border border-amber-200">
+                <Info className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
+                <div>
+                  <span className="font-bold text-amber-950">Requirement Guardrail: </span>
+                  {extractedData.missing.detail}
+                </div>
               </div>
-            </div>
+            )}
           </section>
         )}
+
 
         {/* Results Section (Ranked Result Cards with Staggered Fade-in) */}
         {results && !isProcessing && (
           <section className="space-y-4">
             {/* Results Header */}
-            <div className="flex items-center justify-between px-1 animate-fade-in">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-1 animate-fade-in">
               <div>
                 <h3 className="text-base font-bold text-slate-900 flex items-center gap-2 tracking-tight">
                   <Award className="w-4 h-4 text-teal-700" />
@@ -445,11 +548,46 @@ export default function App() {
                   Ranked by dense semantic match & rule-verified status for sector: <span className="text-teal-800 font-semibold">{sector}</span>
                 </p>
               </div>
-              <div className="flex items-center gap-2 text-xs text-slate-600 font-mono bg-slate-100 border border-slate-200 px-3 py-1 rounded-full">
-                <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
-                <span className="font-semibold">{results.length} Standards Ranked</span>
+              <div className="flex flex-wrap items-center gap-2 text-xs text-slate-600 font-mono bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-xl self-start sm:self-auto">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+                  <span className="font-semibold text-slate-800">{results.length} Standards Ranked</span>
+                </div>
+                {latencyMs !== null && (
+                  <>
+                    <span className="text-slate-300">|</span>
+                    <span className="text-teal-700 font-bold flex items-center gap-1">
+                      <span>⚡</span> {latencyMs}ms
+                    </span>
+                  </>
+                )}
+                <span className="text-slate-300">|</span>
+                <span className="text-slate-500 text-[11px]">ChromaDB + BGE</span>
               </div>
             </div>
+
+            {/* Human Verification Warning Banner for Low Confidence (<0.72) */}
+            {requiresHumanReview && (
+              <div className="bg-amber-50 border border-amber-300 rounded-2xl p-4 sm:p-5 shadow-xs flex items-start gap-3.5 animate-fade-in">
+                <div className="p-2.5 rounded-xl bg-amber-100 border border-amber-300 text-amber-800 shrink-0 mt-0.5">
+                  <AlertTriangle className="w-5 h-5 text-amber-700" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                    <h4 className="text-sm sm:text-base font-bold text-amber-950 tracking-tight">
+                      Recommend Human Verification
+                    </h4>
+                    <span className="text-[11px] font-mono font-semibold text-amber-900 bg-amber-100 px-2.5 py-0.5 rounded-full border border-amber-300 self-start sm:self-auto">
+                      Confidence Guardrail (&lt;72%)
+                    </span>
+                  </div>
+                  <p className="text-xs text-amber-900 mt-1.5 leading-relaxed font-medium">
+                    {humanReviewReason ||
+                      'The top candidate match has a similarity score below the 72% confidence threshold. Manual engineering verification is recommended before citing in tender documents.'}
+                  </p>
+                </div>
+              </div>
+            )}
 
             {/* Ranked Result Cards */}
             <div className="grid grid-cols-1 gap-4">
@@ -477,9 +615,16 @@ export default function App() {
                         </span>
                       </div>
 
-                      {/* Badges: Confidence Score + Status Tag */}
-                      <div className="flex items-center gap-2.5">
-                        {/* Status Tag (Active / Superseded) */}
+                      {/* Badges: Certification + Confidence Score + Status Tag */}
+                      <div className="flex flex-wrap items-center gap-2">
+                        {/* Certification Scheme Tag */}
+                        {item.certification && item.certification !== 'None' && (
+                          <span className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-100 text-slate-700 border border-slate-200 font-mono">
+                            {item.certification}
+                          </span>
+                        )}
+
+                        {/* Status Tag (Active / Superseded / Withdrawn) */}
                         <span
                           className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border ${statusBadge.style}`}
                         >
@@ -493,6 +638,11 @@ export default function App() {
                         >
                           <span className={`w-1.5 h-1.5 rounded-full ${conf.dotStyle}`}></span>
                           <span className="font-mono">{conf.label}</span>
+                          {item.similarity_score !== undefined && (
+                            <span className="text-[10px] text-slate-400 font-mono ml-0.5">
+                              ({(item.similarity_score * 100).toFixed(1)}%)
+                            </span>
+                          )}
                         </span>
                       </div>
                     </div>
@@ -501,6 +651,97 @@ export default function App() {
                     <h4 className="text-sm sm:text-base font-semibold text-slate-800 leading-relaxed mb-3.5 pl-10">
                       {item.title}
                     </h4>
+
+                    {/* Superseded / Withdrawn Compliance Alert Callout */}
+                    {item.superseded_warning && (
+                      <div className="pl-10 mb-3.5">
+                        <div className="flex items-start gap-2.5 text-xs text-rose-900 bg-rose-50/90 border border-rose-300 px-3.5 py-2.5 rounded-xl">
+                          <AlertTriangle className="w-4 h-4 text-rose-700 shrink-0 mt-0.5" />
+                          <div>
+                            <span className="font-bold text-rose-950">Compliance Alert: </span>
+                            {item.warning_reason || 'This standard has been superseded or withdrawn. Do not cite in new procurement specifications.'}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Allied & Normative Standards (Rendered exclusively on Rank #1) */}
+                    {index === 0 && item.allied_standards && Object.keys(item.allied_standards).length > 0 && (
+                      <div className="pl-10 mb-4 animate-fade-in">
+                        <div className="bg-slate-50/80 border border-slate-200/90 rounded-xl p-4 shadow-2xs">
+                          {/* Allied Section Header */}
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 mb-3 border-b border-slate-200/80">
+                            <div className="flex items-center gap-2">
+                              <div className="p-1.5 rounded-lg bg-teal-50 border border-teal-200 text-teal-700">
+                                <GitFork className="w-3.5 h-3.5" />
+                              </div>
+                              <div>
+                                <h5 className="text-xs font-bold uppercase tracking-wider text-slate-900">
+                                  Allied &amp; Normative Standards (Cross-Referenced)
+                                </h5>
+                                <p className="text-[11px] text-slate-500">
+                                  Mandatory test methods, material specifications &amp; safety references
+                                </p>
+                              </div>
+                            </div>
+                            <div className="flex items-center gap-2 self-start sm:self-auto">
+                              <span className="text-[10px] font-mono font-semibold text-teal-800 bg-teal-50 border border-teal-200 px-2.5 py-0.5 rounded-full">
+                                In-Memory Graph (1-Hop)
+                              </span>
+                              <span className="text-[10px] text-slate-500 font-mono bg-white border border-slate-200 px-2 py-0.5 rounded-md">
+                                {Object.values(item.allied_standards).reduce((acc, curr) => acc + curr.length, 0)} Linked
+                              </span>
+                            </div>
+                          </div>
+
+                          {/* Grouped Allied Standards by Reference Type */}
+                          <div className="space-y-3">
+                            {Object.entries(item.allied_standards).map(([refType, stdList]) => {
+                              const groupLabel =
+                                stdList[0]?.reference_type_label ||
+                                refType.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
+
+                              return (
+                                <div key={refType} className="space-y-1.5">
+                                  <div className="flex items-center gap-2">
+                                    <span className="text-[11px] font-bold text-slate-700 flex items-center gap-1.5 uppercase tracking-wide font-mono">
+                                      <span className="w-1.5 h-1.5 rounded-full bg-teal-600"></span>
+                                      {groupLabel}
+                                    </span>
+                                    <span className="text-[10px] font-mono text-slate-400">
+                                      ({stdList.length})
+                                    </span>
+                                  </div>
+
+                                  <div className="flex flex-wrap gap-2">
+                                    {stdList.map((allied) => (
+                                      <div
+                                        key={allied.standard_id}
+                                        title={`${allied.standard_id}: ${allied.title} (${allied.status})`}
+                                        className="inline-flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-white border border-slate-200 shadow-2xs hover:border-teal-500 hover:bg-teal-50/20 transition-all text-xs group/chip cursor-default"
+                                      >
+                                        <span
+                                          className={`w-1.5 h-1.5 rounded-full shrink-0 ${
+                                            allied.status === 'Active' ? 'bg-emerald-600' : 'bg-rose-500'
+                                          }`}
+                                          title={`Status: ${allied.status}`}
+                                        ></span>
+                                        <span className="font-mono font-bold text-slate-900 group-hover/chip:text-teal-800 transition-colors">
+                                          {allied.standard_id}
+                                        </span>
+                                        <span className="text-[11px] text-slate-500 max-w-[180px] sm:max-w-[280px] truncate border-l border-slate-200 pl-2 font-medium">
+                                          {allied.title}
+                                        </span>
+                                      </div>
+                                    ))}
+                                  </div>
+                                </div>
+                              )
+                            })}
+                          </div>
+                        </div>
+                      </div>
+                    )}
 
                     {/* Explanation Text in Smaller Muted Text */}
                     <div className="pl-10 pt-3.5 border-t border-slate-100">
