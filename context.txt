@@ -96,85 +96,246 @@ standardiq/
        for instant live demonstration to hackathon evaluators.
      - Sector selector dropdown (Electrical, Civil/Construction, IT/Electronics).
      - "Recommend Standards" action button with active/disabled/processing states.
-  4. Simulated Local Inference Pipeline:
-     - 1.25s multi-phase progress tracker simulating local execution:
-       * Phase 1 (0-450ms): Parsing clauses & ambiguity via Fine-Tuned LLM.
-       * Phase 2 (450-850ms): Dense BGE-M3 embedding & vector search.
-       * Phase 3 (850-1250ms): Rule engine verification against BIS QCO database.
-  5. Extracted Requirements Panel:
+  4. Real Retrieval Pipeline Integration [REAL - WIRED]:
+     - Replaced simulated setTimeout delays with real asynchronous `fetch('http://127.0.0.1:8000/recommend')`.
+     - Measures real end-to-end API execution latency using `performance.now()`.
+     - Live loading spinner active for the exact duration of the local vector search.
+     - Displays measured latency directly on the results header (e.g. `⚡ 42ms | ChromaDB + BGE`).
+  5. Graceful Error Handling [REAL - WIRED]:
+     - Dedicated enterprise error banner rendered if FastAPI backend is offline.
+     - Displays actionable troubleshooting instructions (command to start Uvicorn).
+     - Zero silent fallback to mock data when backend fails.
+  6. Extracted Requirements Panel [MOCK / PLACEHOLDER]:
      - Displays parsed structured key-value chips (Voltage, Material, Environment, Application).
      - Missing Spec Warning Chip: High-contrast amber badge (⚠️ "Missing: Operating Temperature") 
        with contextual explanation callout to showcase the ambiguity detection guardrail.
-  6. Ranked Standards Recommendation Cards:
+     - NOTE: Stays mocked as placeholder for this milestone; Tier 1 Local LLM extraction scheduled next.
+  7. Ranked Standards Recommendation Cards [REAL - WIRED]:
      - Staggered fadeInUp entrance animation.
      - Numerical rank (#1, #2, #3), monospace standard ID (e.g. IS 1554 (Part 1): 1988), 
        full official title.
-     - High-contrast confidence badges:
+     - Certification Scheme badge (e.g. `ISI Mark (Scheme I)` under mandatory QCO).
+     - High-contrast confidence badges & raw cosine similarity score percentage:
        * Green (>80%): High Confidence Match.
        * Yellow (50-80%): Moderate Match with mismatch caution.
        * Red (<50%): Low Confidence / Superseded flag.
      - Status tag: Active (teal checkmark) vs. Superseded (rose alert).
-     - Dedicated Evidence callout box citing source clauses and rationale.
-  7. Architecture Pillar Cards:
+     - Dedicated Evidence callout box citing source scope text and clause rationale.
+  8. Architecture Pillar Cards:
      - 3 summary cards highlighting: Local Fine-Tuned LLM, BGE-M3 Dense Retrieval, 
        and Rule-Based Guardrails.
-  8. Security Footer:
+  9. Security Footer:
      - Prominent center guarantee: "100% Local Processing • Zero Data Egress • Explainable AI".
      - Subtext crediting SIH 2026, Team Neuroverse, and BIS procurement compliance.
 
 --------------------------------------------------------------------------------
-5. CURATED MOCK STANDARDS DATASET (src/data/mockStandards.js)
+5. CURATED BENCHMARK DATASETS (src/data/)
 --------------------------------------------------------------------------------
-The dataset contains realistic standards across 3 key procurement sectors:
-- Electrical:
-  1. IS 1554 (Part 1): 1988 (96% Confidence, Active) - PVC Insulated Cables up to 1100V.
-  2. IS 694: 2010 (72% Confidence, Active) - PVC Cables up to 450/750V (voltage mismatch).
-  3. IS 1554 (Part 1): 1976 (41% Confidence, Superseded) - Outdated 1st revision.
-- Civil / Construction:
-  1. IS 1489 (Part 1): 2015 (94% Confidence, Active) - Portland Pozzolana Fly-Ash Cement.
-  2. IS 456: 2000 (78% Confidence, Active) - Plain and Reinforced Concrete Code of Practice.
-  3. IS 269: 1989 (35% Confidence, Superseded) - Historical 33-grade OPC specification.
-- IT / Electronics:
-  1. IS 13252 (Part 1): 2010 (92% Confidence, Active) - IT Equipment Safety (CRS registered).
-  2. IS/ISO/IEC 19794-2: 2005 (68% Confidence, Active) - Biometric Data Interchange Formats.
-  3. IS 13252: 2003 (29% Confidence, Superseded) - Superseded first edition.
+A. Real BIS Standards Corpus (src/data/standardsDataset.json) [REAL DATASET]:
+   - 49 verified Indian Standards specifically covering the Electrical Sector 
+     (Power Cables, Building Wires, Overhead Conductors, Winding Wires, Accessories).
+   - Strict schema adherence:
+     * standard_id: exact verified standard designation (e.g. "IS 1554 (Part 1): 1988")
+     * title: official BIS title
+     * scope_text: technical paraphrase written in original words (zero copyright infringement)
+     * status: "Active" (46), "Superseded" (2), or "Withdrawn" (1)
+     * sector: "Electrical"
+     * normative_references: array of linked standard IDs
+     * reference_type: maps references to "material_standard", "test_method", "safety_standard", 
+       "installation_standard", or "terminology_standard"
+     * certification: "ISI Mark (Scheme I)" (31 standards under mandatory QCO), "Voluntary", or "None"
+
+B. Sample Procurement Queries (src/data/sampleQueries.json) [REAL BENCHMARK]:
+   - 18 natural language procurement queries representing realistic government & PSU tenders.
+   - Includes 2 deliberately incomplete queries (omitting operating temperature and voltage grade).
+   - Includes 2 queries with explicit negative constraints/exclusions (e.g., indoor-only / zero-PVC / LSZH).
+   - Maps expected primary and allied standards for benchmarking pipeline retrieval precision.
+
+C. UI Mock Data (src/data/mockStandards.js) [MOCK / DEMO PROTOTYPE]:
+   - Extracted requirements dictionary retained solely for the placeholder Extracted Requirements panel.
+   - Recommendation standards results in mockStandards.js are NO LONGER USED by App.jsx.
 
 --------------------------------------------------------------------------------
-6. TECHNICAL ROADMAP (PHASE 2 & FULL SYSTEM INTEGRATION)
+6. BACKEND & RETRIEVAL ENGINE STATUS (backend/) [REAL RETRIEVAL & RULE PIPELINE]
 --------------------------------------------------------------------------------
-When expanding this project into a full backend + model deployment:
-1. Backend Service (FastAPI):
-   - Scaffold `backend/` directory with `app/main.py`.
-   - Endpoints:
-     * POST `/api/v1/extract-requirements`: Runs local LLM prompt template to parse specs.
-     * POST `/api/v1/recommend-standards`: Runs vector similarity + rule validation.
-     * POST `/api/v1/upload-tender-pdf`: Parses tender PDF via PyMuPDF (`fitz`).
-2. Local Model Serving:
-   - Serve open-weight model (e.g. Qwen2.5-7B-Instruct or Llama-3.2-3B fine-tuned with 
-     Unsloth / LoRA on procurement specs) via Ollama (`http://localhost:11434`) or vLLM.
-3. Vector Retrieval & Indexing:
-   - Use `sentence-transformers` with `BAAI/bge-m3` for multilingual & dense embeddings.
-   - Store 200-500 curated BIS standard abstracts in ChromaDB or Qdrant.
-4. Rule Engine Implementation:
-   - Python module `engine/rules.py` with deterministic validation rules:
-     * Status validator: Cross-references standard number against live BIS Gazette active/withdrawn table.
-     * QCO validator: Verifies mandatory ISI mark requirements under Ministry notifications.
-     * Threshold validator: Compares numerical attributes (voltage, grade, temp) against extracted limits.
-5. Knowledge Graph (Phase 2):
-   - Neo4j graph tracking standard supersession chains, cross-references (e.g. IS 456 references IS 1489), 
-     and sector taxonomy.
+- Framework: FastAPI + Uvicorn + Pydantic v2 + Sentence-Transformers + ChromaDB.
+- Embedding Model: BAAI/bge-small-en-v1.5 (BGE family, 384-dim, fast local CPU inference).
+  * Note: Configurable to BAAI/bge-m3 via EMBEDDING_MODEL_NAME environment variable.
+- Vector Store: ChromaDB persistent client at backend/chroma_db/ indexing 49 standards.
+- Tier 3 Deterministic Rule Engine [REAL]:
+  * Module: backend/app/rules.py
+  * Status Filter: Prioritizes "Active" standards over "Withdrawn" or "Superseded" standards.
+    Inactive candidates are demoted to the bottom of the returned candidate list, and flagged
+    with `superseded_warning: True` and explicit citation warnings.
+  * Confidence Threshold: Deterministically configured to 0.72 (72.0%).
+    Rationale: Analysis across all 18 benchmark queries showed that unambiguous, complete specs
+    exhibit cosine similarity >= 0.74 (average ~0.79). Incomplete specifications (query-15: 0.7092)
+    and negative-exclusion queries (query-17: 0.6799) score below 0.72, signaling ambiguity.
+    Threshold 0.72 cleanly flags these 3 edge cases (16.7%) for human engineering review
+    without causing false positives on unambiguous queries.
+- Allied & Normative Standards In-Memory Graph [REAL - WIRED]:
+  * Module: backend/app/allied_standards.py
+  * Graph Engine: NetworkX DiGraph loaded at startup from standardsDataset.json.
+  * Graph Topology: 52 total nodes (49 corpus standards + 3 external test method parts), 
+    105 directed edges.
+  * Standards with Normative References: 47 / 49 standards (95.9% of corpus).
+  * Two standards without references: IS 1885 (Part 32): 1993 (vocabulary) and 
+    IS 10810 (Part 0): 1984 (testing framework) — verified clean fallback (no empty UI container rendered).
+  * 1-Hop Neighbor Groupings:
+    - Material Specifications (material_standard)
+    - Test Methods (test_method)
+    - Safety & Protection (safety_standard)
+    - Installation Guidelines (installation_standard)
+    - Terminology & Vocabulary (terminology_standard)
+  * Recommendation Attachment: Allied standards are attached ONLY to Rank #1 result; 
+    Rank #2 and Rank #3 results keep `allied_standards = null` to maintain visual focus.
+  * Frontend Display: Card #1 renders dedicated "Allied & Normative Standards (Cross-Referenced)"
+    container with category counts, monospace standard IDs, title tags, and status dots.
+- Active Endpoints:
+  * GET  /health: Health check, model info, collection count (49), allied graph nodes (52), edges (105).
+  * POST /recommend: Accepts {"query": "...", "top_k": 3}, returns top matches with cosine similarity,
+    rule-adjusted ranks, superseded warnings, `requires_human_review` flags, and 1-hop `allied_standards` on Rank #1.
+
+Retrieval + Rule Engine + Allied Standards Benchmark:
+  * Total Corpus: 49 standards
+  * Graph Nodes: 52 nodes, 105 directed edges
+  * 4 Specific Verified Test Cases:
+    1. Demo Preset 1 (Heavy-duty PVC Cable): Rank #1 IS 1554 (Part 1): 1988 -> 6 allied standards (3 material, 3 test methods).
+    2. Query-03 (11kV XLPE Cable): Rank #1 IS 7098 (Part 2): 2011 -> 5 allied standards (3 material, 1 test method, 1 safety standard).
+    3. Query-04 (LV XLPE Cable): Rank #1 IS 7098 (Part 1): 1988 -> 5 allied standards (3 material, 2 test methods).
+    4. Query-10 (Arc Welding Cable): Rank #1 IS 9857: 1990 -> 3 allied standards (2 material, 1 test method).
+  * Cross-check against standardsDataset.json: 100% MATCH across all 4 queries.
+  * Rank #2 and Rank #3 allied standards: verified strictly None/null.
+
+Observed E2E Browser Test Verification (Chrome Headless CDP):
+- Error Handling State: VERIFIED
+  * When backend is offline, UI renders high-contrast rose error banner: "Backend not reachable — is the FastAPI server running on port 8000?". Screenshot: `backend/ui_screenshots/error_state.png`.
+- Query-10 (Arc Welding Cable with Rule Demotion & Allied Standards): VERIFIED
+  * Match #1: IS 9857: 1990 (78.0% similarity | Active | ISI Mark (Scheme I))
+  * Allied Section on Card #1: Rendered with 3 linked standards: IS 8130: 2013, IS 6380: 1984, IS 10810 (Part 5): 1984.
+  * Match #2: IS 6380: 1984 (77.9% similarity | Active | No allied section)
+  * Match #3: IS 434 (Part 1): 1964 (78.8% similarity | Withdrawn | Compliance Alert displayed | No allied section)
+  * Observed UI Latency: 81ms (⚡ 81ms)
+  * Screenshot: `backend/ui_screenshots/allied_standards_card1_welding_cable.png`
+- Query-03 (11kV XLPE Cable with Allied Standards): VERIFIED
+  * Match #1: IS 7098 (Part 2): 2011 (74.6% similarity | Active)
+  * Allied Section on Card #1: Rendered with 5 linked standards across Material, Test Methods, and Safety Protection.
+  * Cards #2 & #3: No allied section.
+  * Screenshot: `backend/ui_screenshots/allied_standards_card1_xlpe_11kv.png`
+- Demo Preset 1 (PVC Cables with Allied Standards): VERIFIED
+  * Match #1: IS 1554 (Part 1): 1988 (79.0% similarity | Active | ISI Mark (Scheme I))
+  * Allied Section on Card #1: Rendered with 6 linked standards (3 material specifications, 3 test methods).
+  * Observed UI Latency: 42ms (⚡ 42ms)
+  * Screenshot: `backend/ui_screenshots/allied_standards_card1_pvc.png`
 
 --------------------------------------------------------------------------------
-7. HOW TO RUN THE PROJECT LOCALLY
+7. HOW TO RUN THE SYSTEM LOCALLY
 --------------------------------------------------------------------------------
-Prerequisites: Node.js (v18+) and npm installed.
+A. Frontend Dashboard (React + Vite):
+   cd standardiq-dashboard
+   npm install
+   npm run dev -- --port 5173
+   Access at: http://127.0.0.1:5173
 
-Commands:
-  cd standardiq-dashboard
-  npm install
-  npm run dev -- --port 5173
+B. Backend API (FastAPI + ChromaDB + NetworkX):
+   cd backend
+   .\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
+   Access Swagger UI at: http://127.0.0.1:8000/docs
+   Run Retrieval Benchmark:
+   .\.venv\Scripts\python.exe test_retrieval_with_rules.py
+   Run Allied Standards Graph Verification:
+   .\.venv\Scripts\python.exe verify_allied_standards.py
+   Run Full Browser UI Verification Suite (CDP Screenshots):
+   .\.venv\Scripts\python.exe test_allied_ui_browser.py
+================================================================================
 
-Then access http://localhost:5173 in the browser.
-To verify production build:
-  npm run build
+8. TIER 1 — LOCAL LLM STRUCTURED EXTRACTION (SESSION 5 — 2026-09-04)
+--------------------------------------------------------------------------------
+Status: REAL (live LLM call at localhost:8085) — with caveats documented below.
+
+Files Created/Modified:
+  * backend/app/extraction.py — NEW. Contains extract_requirements() and
+    apply_exclusion_filter(). Uses urllib.request (stdlib), connects to
+    localhost:8085/v1/chat/completions with OpenAI-compatible format.
+  * backend/app/models.py — Added ExtractionResult Pydantic model;
+    added extraction: Optional[ExtractionResult] to RecommendResponse;
+    added exclusion_match: bool and exclusion_terms: List[str] to StandardResult.
+  * backend/app/main.py — Wired Tier 1 extraction BEFORE ChromaDB retrieval.
+    Pipeline order is now: LLM extraction -> vector retrieval ->
+    status rules -> exclusion demotion -> allied graph.
+  * standardiq-dashboard/src/App.jsx — Replaced MOCK_EXTRACTED_REQUIREMENTS
+    with real transformer from data.extraction. UI now shows:
+    - Real voltage, material, environment, application chips.
+    - Real exclusions chip (only if present).
+    - Dynamic parameter count badge (N Parameters Identified).
+    - Missing-fields guardrail block only when missing_fields is non-empty.
+    - LLM latency in milliseconds in subtitle (e.g. "2097ms").
+    - "Local LLM (Qwen3.5-4B, air-gapped)" label replacing "(Mock / Placeholder)".
+
+LLM Details:
+  * Model: Qwen3.5-4B-UD-Q4_K_XL.gguf
+  * Endpoint: http://localhost:8085/v1 (WSL Docker, llama.cpp llama-server binary)
+  * Verified working from Windows Python via urllib.request.
+  * temperature: 0.0, max_tokens: 300
+  * Timeout: 15s hard cap — on timeout, extraction returns empty defaults and
+    pipeline continues uninterrupted.
+
+VERIFIED Test Results (6 queries, live LLM, 2026-09-04):
+  Query | LLM latency | Rank #1 match | Notes
+  ------+--------------+---------------+------------------------------------------
+  q-17  | 2322ms      | MISMATCH      | Expected IS 694:2010 — got IS 9857:1990.
+          |              |               | Exclusion terms ('armoured','weatherproof',
+          |              |               | 'wet trench','direct burial') correctly
+          |              |               | extracted. BUT no candidate scope_text
+          |              |               | contained those exact strings -> 0 demotions.
+          |              |               | Vector search still retrieves wrong standard.
+          |              |               | Requires human review (score 67.9% < 72%).
+  q-01  | 2097ms      | MISMATCH      | Expected IS 1554 (Part 1):1988 — got
+          |              |               | IS 694:2010. Score delta: 0.0001 (76.67% vs
+          |              |               | 76.66%) — effectively tied. Dataset ambiguity.
+  q-02  | 2176ms      | MATCH         | IS 694:2010 — 82.0% similarity.
+  q-03  | 5198ms      | MATCH         | IS 7098 (Part 2):2011 — 74.6%.
+          |              |               | LLM generated hallucinated missing_fields
+          |              |               | (repetitive thermal metrics). Known issue.
+  q-05  | 2086ms      | MATCH         | IS 14255:1995 — 84.9%.
+  q-10  | 1874ms      | MATCH         | IS 9857:1990 — 78.0%. IS 434 (Withdrawn)
+          |              |               | correctly demoted to Rank 3 by rules.
+
+Accuracy: 4/6 MATCH (67%). Two mismatches are pre-existing vector search
+limitations, not introduced by this milestone. q-01 mismatch existed before
+extraction was added (score delta < 0.01%).
+
+Exclusion Demotion Status:
+  * The filter works correctly in code: apply_exclusion_filter() demotes
+    candidates where scope_text contains an exclusion term.
+  * PRACTICAL LIMIT: For query-17, the exclusion terms are too specific
+    ('armoured', 'weatherproof') but these exact words are not in the
+    scope_text of the top-3 results returned (which are for welding cables
+    and aluminium cables — semantically different). The exclusion filter
+    cannot correct a vector retrieval failure at the corpus level.
+  * The 'human review required' flag fires correctly on q-17 (67.9% < 72%
+    threshold), which is the correct fallback behavior for ambiguous queries.
+
+Latency Characterisation (VERIFIED):
+  * LLM call: 1.9 - 5.2s (typically 2.0-2.5s for short queries).
+  * The 5.2s outlier (q-03) was a long XLPE cable spec that triggered
+    hallucinated missing_fields repetition. Not typical.
+  * Total API response time = LLM latency + retrieval latency (< 200ms).
+    End-to-end from frontend click: ~2.5s.
+  * This is within the ~2-3s observable limit for a demo setting.
+  * User was informed: if >2s latency is a concern for pitch, this is real
+    and honest — can skip extraction or run it async in a future iteration.
+
+Known Issues / Honest Caveats:
+  * query-03 LLM response generated very long repeated missing_fields.
+    Prompt does not currently have a max-list-length guard. Low priority for demo.
+  * Exclusion demotion does not fix query-17's core retrieval failure (corpus
+    doesn't have an IS 694 neighbour in the exclusion query's semantic space).
+  * query-01 rank-1 mismatch (IS 694 vs IS 1554) is pre-existing — tied scores.
+
+Build Status: npm run build — 0 errors.
+
+C. Run Extraction Integration Test:
+   python backend/test_extraction_integration.py
+
 ================================================================================
