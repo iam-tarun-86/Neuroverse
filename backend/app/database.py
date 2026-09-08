@@ -19,7 +19,14 @@ logging.basicConfig(level=logging.INFO)
 class StandardsVectorDB:
     def __init__(self):
         logger.info(f"Initializing embedding model: {EMBEDDING_MODEL_NAME}")
-        self.model = SentenceTransformer(EMBEDDING_MODEL_NAME)
+        try:
+            self.model = SentenceTransformer(EMBEDDING_MODEL_NAME, local_files_only=True)
+            self.is_st = True
+        except Exception as e:
+            logger.warning(f"Could not load local SentenceTransformer ({e}). Falling back to TF-IDF vectorizer.")
+            from sklearn.feature_extraction.text import TfidfVectorizer
+            self.model = TfidfVectorizer(max_features=384)
+            self.is_st = False
         
         # Ensure persistence directory exists
         CHROMA_PERSIST_DIR.mkdir(parents=True, exist_ok=True)
@@ -32,6 +39,27 @@ class StandardsVectorDB:
         )
         
         self._ensure_dataset_indexed()
+
+    def _encode(self, texts: List[str], is_indexing: bool = False) -> List[List[float]]:
+        if self.is_st:
+            return self.model.encode(texts, normalize_embeddings=True, show_progress_bar=False).tolist()
+        else:
+            import numpy as np
+            from sklearn.preprocessing import normalize
+            if is_indexing or not hasattr(self.model, "vocabulary_"):
+                vecs = self.model.fit_transform(texts).toarray()
+            else:
+                vecs = self.model.transform(texts).toarray()
+            
+            # Ensure vector dimension is strictly 384 to match ChromaDB schema
+            if vecs.shape[1] < 384:
+                pad_width = 384 - vecs.shape[1]
+                vecs = np.pad(vecs, ((0, 0), (0, pad_width)), mode='constant')
+            elif vecs.shape[1] > 384:
+                vecs = vecs[:, :384]
+
+            normed = normalize(vecs, norm='l2')
+            return normed.tolist()
 
     def _ensure_dataset_indexed(self):
         """Indexes standardsDataset.json into ChromaDB if collection is empty or out of sync."""
@@ -77,7 +105,7 @@ class StandardsVectorDB:
             })
             
         # Generate normalized dense embeddings
-        embeddings = self.model.encode(documents, normalize_embeddings=True, show_progress_bar=True).tolist()
+        embeddings = self._encode(documents, is_indexing=True)
         
         # Upsert into ChromaDB
         self.collection.upsert(
@@ -90,7 +118,7 @@ class StandardsVectorDB:
 
     def search(self, query: str, top_k: int = 3) -> List[Dict[str, Any]]:
         """Encodes query and retrieves top_k standards ranked by cosine similarity."""
-        query_vec = self.model.encode([query], normalize_embeddings=True).tolist()
+        query_vec = self._encode([query], is_indexing=False)
         
         results = self.collection.query(
             query_embeddings=query_vec,

@@ -1,0 +1,257 @@
+[
+  {
+    "id": "query-01",
+    "query": "Supply of 1.1 kV grade, 3.5 core x 70 sq.mm stranded aluminium conductor, heavy duty PVC insulated, galvanized flat steel strip armoured, overall PVC sheathed electric power cable for outdoor distribution feeder.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 1554 (Part 1): 1988",
+    "expected_allied_standards": [
+      "IS 8130: 2013",
+      "IS 5831: 1984",
+      "IS 3975: 1999"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": false,
+    "notes": "Standard complete specification for industrial low-tension armoured power cable."
+  },
+  {
+    "id": "query-02",
+    "query": "Procurement of single core 4.0 sq.mm multi-stranded high conductivity electrolytic copper conductor, PVC insulated unsheathed flexible domestic wiring cables for conduit concealed wiring rated up to 1100V with ISI marking.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 694: 2010",
+    "expected_allied_standards": [
+      "IS 8130: 2013",
+      "IS 5831: 1984"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": false,
+    "notes": "Standard complete specification for residential/commercial building wiring."
+  },
+  {
+    "id": "query-03",
+    "query": "Supply and delivery of 11 kV (E) grade, 3 core 185 sq mm compacted stranded aluminium conductor, crosslinked polyethylene (XLPE) insulated, extruded semi-conducting screen, galvanized steel strip armoured and outer PVC sheathed power cables.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 7098 (Part 2): 2011",
+    "expected_allied_standards": [
+      "IS 8130: 2013",
+      "IS 3975: 1999",
+      "IS 16269: 2014"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": false,
+    "notes": "Medium voltage underground utility distribution cable specification."
+  },
+  {
+    "id": "query-04",
+    "query": "Procurement of 1100 V working voltage, 4 core 120 sq.mm stranded copper conductor XLPE insulated and extruded PVC sheathed armoured power cables designed for 90 deg C continuous conductor operating temperature.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 7098 (Part 1): 1988",
+    "expected_allied_standards": [
+      "IS 8130: 2013",
+      "IS 3975: 1999"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": false,
+    "notes": "Low voltage XLPE cable specification requiring 90°C thermal rating."
+  },
+  {
+    "id": "query-05",
+    "query": "Turnkey supply of LT Aerial Bunched Cables (ABC) 3x50 + 1x35 (insulated messenger aluminium alloy) + 1x16 sq.mm street light core, XLPE insulated for rural overhead distribution lines operating at 1.1 kV.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 14255: 1995",
+    "expected_allied_standards": [
+      "IS 398 (Part 4): 1994",
+      "IS 8130: 2013"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": false,
+    "notes": "Overhead distribution cable with integrated messenger wire for rural theft reduction."
+  },
+  {
+    "id": "query-06",
+    "query": "Supply of 132 kV single core 630 sq.mm copper conductor, extra high voltage crosslinked polyethylene (XLPE) insulated cable with corrugated aluminium metallic radial sheath and outer anti-termite HDPE jacket.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 7098 (Part 3): 1993",
+    "expected_allied_standards": [
+      "IS 8130: 2013",
+      "IS 16269: 2014"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": false,
+    "notes": "Extra-high-voltage transmission cable specification."
+  },
+  {
+    "id": "query-07",
+    "query": "Procurement of ACSR 'Panther' conductor consisting of 30 aluminium strands of 3.00 mm diameter and 7 galvanized steel core wires of 3.00 mm for 66 kV / 132 kV double circuit overhead transmission towers.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 398 (Part 2): 1996",
+    "expected_allied_standards": [
+      "IS 1885 (Part 32): 1993"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": false,
+    "notes": "Bare overhead transmission conductor using steel reinforcement."
+  },
+  {
+    "id": "query-08",
+    "query": "Supply of All Aluminium Alloy Conductors (AAAC) 50 sq.mm 'Hazel' for high-corrosion coastal distribution network replacement, heat-treated Al-Mg-Si alloy with minimum breaking strength 14.8 kN.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 398 (Part 4): 1994",
+    "expected_allied_standards": [
+      "IS 1885 (Part 32): 1993"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": false,
+    "notes": "Corrosion-resistant aluminium alloy overhead distribution conductor."
+  },
+  {
+    "id": "query-09",
+    "query": "Procurement of heavy-duty flexible elastomer insulated and tough polychloroprene sheathed trailing cable, 3.3 kV rated, 3 power cores with integrated pilot and earth continuity cores for underground coal cutter machines.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 14494: 1998",
+    "expected_allied_standards": [
+      "IS 8130: 2013",
+      "IS 6380: 1984",
+      "IS 9968 (Part 2): 2002"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": false,
+    "notes": "Mining trailing cable subjected to heavy mechanical abrasions."
+  },
+  {
+    "id": "query-10",
+    "query": "Supply of 70 sq.mm extra-flexible annealed copper conductor single core rubber elastomer insulated welding cables for manual metal arc welding machine connection, oil and heat resistant.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 9857: 1990",
+    "expected_allied_standards": [
+      "IS 8130: 2013",
+      "IS 6380: 1984"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": false,
+    "notes": "High flexibility secondary connection cable for arc welding equipment."
+  },
+  {
+    "id": "query-11",
+    "query": "Supply of polywrap PVC/polyester dual insulated copper winding wires of 1.2 mm nominal diameter for continuous water-submerged induction motors operating in deep borewells.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 8783 (Part 2): 1995",
+    "expected_allied_standards": [
+      "IS 8783 (Part 1): 1995",
+      "IS 8130: 2013"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": false,
+    "notes": "Waterproof winding wire for submerged borehole agricultural pumps."
+  },
+  {
+    "id": "query-12",
+    "query": "Supply of 4-pair thermocouple compensating and extension cable, Type K (Chromel-Alumel), KX grade, individual and overall aluminium foil shielding with drain wire and heat-resistant PVC sheath for boiler temperature instrumentation.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 8784: 1987",
+    "expected_allied_standards": [
+      "IS 5831: 1984"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": false,
+    "notes": "Temperature instrumentation cable connecting thermocouple sensors."
+  },
+  {
+    "id": "query-13",
+    "query": "Procurement of outdoor heat-shrinkable termination kits for 33 kV, 3-core 300 sq.mm XLPE insulated armoured aluminium power cables including stress control tubes and grounding braid.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 13573 (Part 1): 2021",
+    "expected_allied_standards": [
+      "IS 7098 (Part 2): 2011"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": false,
+    "notes": "Cable accessory and termination kit for high voltage extruded cable."
+  },
+  {
+    "id": "query-14",
+    "query": "Procurement of heavy-duty preservative treated wooden drums and steel-flanged reels with barrel diameter 1400 mm suitable for packaging and transport of 11 kV HT power cables without exceeding minimum bending radius.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 10418: 1982",
+    "expected_allied_standards": [
+      "IS 1885 (Part 32): 1993"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": false,
+    "notes": "Packaging reel specification for damage-free cable transportation."
+  },
+  {
+    "id": "query-15",
+    "query": "Tender for supply of 1.1 kV grade multi-core PVC insulated copper conductor power cables with steel wire armouring for coastal refinery substation, without specifying thermal operating rating.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 1554 (Part 1): 1988",
+    "expected_allied_standards": [
+      "IS 8130: 2013",
+      "IS 3975: 1999"
+    ],
+    "deliberately_incomplete": true,
+    "missing_fields": [
+      "Operating Temperature Range / Thermal Class"
+    ],
+    "has_exclusion": false,
+    "notes": "Deliberately incomplete spec: omits continuous operating temperature and thermal derating factors critical for refinery ambient heat."
+  },
+  {
+    "id": "query-16",
+    "query": "Procurement of 3-core 95 sq.mm stranded aluminium conductor crosslinked polyethylene (XLPE) insulated and galvanized steel strip armoured power distribution cable with extruded inner and outer PVC sheath.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 7098 (Part 1): 1988",
+    "expected_allied_standards": [
+      "IS 7098 (Part 2): 2011",
+      "IS 8130: 2013"
+    ],
+    "deliberately_incomplete": true,
+    "missing_fields": [
+      "Rated Voltage Class (LT 1.1kV vs HT 11kV/33kV)"
+    ],
+    "has_exclusion": false,
+    "notes": "Deliberately incomplete spec: omits rated operating voltage entirely, leaving ambiguity between IS 7098 Part 1 (1.1kV) and Part 2 (3.3-33kV)."
+  },
+  {
+    "id": "query-17",
+    "query": "Procurement of flexible multi-core copper control cables for indoor control panel wiring only; strictly non-armoured, not weatherproof, and not suitable for wet trench or direct burial.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 694: 2010",
+    "expected_allied_standards": [
+      "IS 8130: 2013",
+      "IS 5831: 1984"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": true,
+    "notes": "Exclusion language: specifies indoor use only, explicit negative constraints against armouring, wet trenches, and weatherproofing."
+  },
+  {
+    "id": "query-18",
+    "query": "Supply of 1100 V fire-safe wiring cables for underground metro passenger terminal concourses, strictly low-smoke zero-halogen (LSZH); must contain zero PVC, zero halogen compounds, and emit non-toxic gases under fire conditions.",
+    "target_sector": "Electrical",
+    "expected_primary_standard": "IS 17048: 2018",
+    "expected_allied_standards": [
+      "IS 8130: 2013",
+      "IS 10810 (Part 58): 1998",
+      "IS 10810 (Part 61): 1988"
+    ],
+    "deliberately_incomplete": false,
+    "missing_fields": [],
+    "has_exclusion": true,
+    "notes": "Exclusion language: explicitly bans PVC and halogen materials in favor of halogen-free flame retardant compounds."
+  }
+]

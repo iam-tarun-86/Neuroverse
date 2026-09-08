@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "id": "usr-admin",
+      "name": "Directorate Administrator",
+      "email": "admin@gmail.com",
+      "password": "admin@123",
+      "role": "Admin",
+      "status": "approved",
+      "createdAt": "2026-09-01"
+    },
+    {
+      "id": "usr-1",
+      "name": "Shri Rajesh Sharma",
+      "email": "officer@gov.in",
+      "password": "officer@123",
+      "role": "Procurement Officer",
+      "status": "approved",
+      "createdAt": "2026-09-03"
+    },
+    {
+      "id": "usr-1788879203670",
+      "name": "boobesh",
+      "email": "boob@gmail.com",
+      "password": "0boob1@123",
+      "role": "Procurement Officer",
+      "status": "approved",
+      "createdAt": "2026-09-08"
+    }
+  ],
+  "waitlist": [
+    {
+      "id": "req-1788879097715",
+      "name": "Prasath",
+      "email": "hi@gmail.com",
+      "password": "0unknown1",
+      "role": "Procurement Officer",
+      "status": "pending",
+      "requestedAt": "2026-09-08 20:21"
+    },
+    {
+      "id": "req-1",
+      "name": "Er. Vikram Malhotra",
+      "email": "vikram.malhotra@cpwd.gov.in",
+      "password": "vikram@password",
+      "role": "Procurement Engineer (CPWD)",
+      "status": "pending",
+      "requestedAt": "2026-09-07 15:45"
+    }
+  ]
+}

@@ -127,6 +127,96 @@ def recommend_standards(payload: RecommendRequest):
         extraction=extraction_result,
     )
 
+from pydantic import BaseModel
+from app.auth_store import (
+    get_all_users,
+    get_waitlist,
+    register_user,
+    login_user,
+    approve_request,
+    reject_request,
+    add_user_direct,
+    delete_user,
+)
+
+class RegisterPayload(BaseModel):
+    name: str
+    email: str
+    password: str
+    role: str = "Procurement Officer"
+
+class LoginPayload(BaseModel):
+    email: str
+    password: str
+
+class RequestActionPayload(BaseModel):
+    requestId: str
+
+class DirectUserPayload(BaseModel):
+    name: str
+    email: str
+    password: str
+    role: str = "Procurement Officer"
+
+
+# ══════════════════════════════════════════════════════════════════
+# AUTHENTICATION & USER MANAGEMENT ENDPOINTS
+# ══════════════════════════════════════════════════════════════════
+
+@app.post("/api/auth/register", tags=["Auth"])
+def api_register(payload: RegisterPayload):
+    if not payload.name.strip() or not payload.email.strip() or not payload.password.strip():
+        raise HTTPException(status_code=400, detail="Name, email and password are required.")
+    res = register_user(payload.name, payload.email, payload.password, payload.role)
+    if not res["success"]:
+        raise HTTPException(status_code=400, detail=res["message"])
+    return res
+
+@app.post("/api/auth/login", tags=["Auth"])
+def api_login(payload: LoginPayload):
+    res = login_user(payload.email, payload.password)
+    if not res["success"]:
+        status_code = 403 if res.get("status_code") in ["PENDING_APPROVAL", "REJECTED", "INACTIVE"] else 401
+        raise HTTPException(status_code=status_code, detail=res["message"])
+    return res
+
+@app.get("/api/admin/waitlist", tags=["Admin"])
+def api_get_waitlist():
+    return {"waitlist": get_waitlist()}
+
+@app.post("/api/admin/approve", tags=["Admin"])
+def api_approve(payload: RequestActionPayload):
+    res = approve_request(payload.requestId)
+    if not res["success"]:
+        raise HTTPException(status_code=404, detail=res["message"])
+    return res
+
+@app.post("/api/admin/reject", tags=["Admin"])
+def api_reject(payload: RequestActionPayload):
+    res = reject_request(payload.requestId)
+    return res
+
+@app.get("/api/admin/users", tags=["Admin"])
+def api_get_users():
+    return {"users": get_all_users()}
+
+@app.post("/api/admin/users", tags=["Admin"])
+def api_add_user(payload: DirectUserPayload):
+    if not payload.name.strip() or not payload.email.strip() or not payload.password.strip():
+        raise HTTPException(status_code=400, detail="Name, email and password are required.")
+    res = add_user_direct(payload.name, payload.email, payload.password, payload.role)
+    if not res["success"]:
+        raise HTTPException(status_code=400, detail=res["message"])
+    return res
+
+@app.delete("/api/admin/users/{user_id}", tags=["Admin"])
+def api_delete_user(user_id: str):
+    res = delete_user(user_id)
+    if not res["success"]:
+        raise HTTPException(status_code=400, detail=res["message"])
+    return res
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("app.main:app", host="127.0.0.1", port=8000, reload=True)
+

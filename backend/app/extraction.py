@@ -106,13 +106,20 @@ def extract_requirements(query: str) -> tuple[dict, float]:
 
     start = time.time()
     try:
+        # Fast socket check — fail-fast in <1ms if llama.cpp is not listening on port 8085
+        import socket
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.settimeout(0.2)
+            if s.connect_ex(('127.0.0.1', 8085)) != 0:
+                raise ConnectionRefusedError("Local LLM server (port 8085) is offline")
+
         req = urllib.request.Request(
             f"{LLM_BASE_URL}/chat/completions",
             data=json.dumps(payload).encode("utf-8"),
             headers={"Content-Type": "application/json"},
             method="POST",
         )
-        with urllib.request.urlopen(req, timeout=LLM_TIMEOUT_SECONDS) as res:
+        with urllib.request.urlopen(req, timeout=1.5) as res:
             raw_response = json.loads(res.read().decode("utf-8"))
 
         latency_ms = (time.time() - start) * 1000
